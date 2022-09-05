@@ -1,0 +1,2374 @@
+@prefix : <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#> .
+
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> ;
+                                                                           :license "https://creativecommons.org/licenses/by/4.0/" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#license
+:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel
+:previousLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder
+<http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://schema.org/Patient> ;
+                                                                             rdfs:range <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain <https://schema.org/Grams> ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876>
+                                      :DomainSpecific
+                                    )
+                      ] .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAffective
+:hasAffective rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :SocialPost ;
+              rdfs:range <https://schema.org/Affective> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAudioFeatures
+:hasAudioFeatures rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasMultimediaFeatures ;
+                  rdfs:domain :SocialPost ;
+                  rdfs:range :AudioFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams
+:hasBigrams rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasGrams ;
+            owl:inverseOf :isBigramOf ;
+            rdfs:domain :SocialPost ;
+            rdfs:range <https://schema.org/Bigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons
+:hasEmoticons rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasMultimediaFeatures ;
+              rdfs:domain :SocialPost ;
+              rdfs:range <https://schema.org/Emoticons> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFeatures
+:hasFeatures rdf:type owl:ObjectProperty ;
+             rdfs:domain :SocialPost ;
+             rdfs:range <http://purl.org/linguistics/gold/Features> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams
+:hasGrams rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isGramOf ;
+          rdfs:domain :SocialPost ;
+          rdfs:range <https://schema.org/Grams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasImageFeatures
+:hasImageFeatures rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasMultimediaFeatures ;
+                  rdfs:domain :SocialPost ;
+                  rdfs:range :ImageFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures
+:hasMultimediaFeatures rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SocialPost ;
+                       rdfs:range :MultimediaFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNegativeEmoticons
+:hasNegativeEmoticons rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasEmoticons ;
+                      rdfs:domain :SocialPost ;
+                      rdfs:range :negative_emoticons .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases
+:hasPhrases rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasGrams ;
+            owl:inverseOf :isPhraseOf ;
+            rdfs:domain :SocialPost ;
+            rdfs:range <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPositiveEmoticons
+:hasPositiveEmoticons rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasEmoticons ;
+                      rdfs:domain :SocialPost ;
+                      rdfs:range :positive_emoticons .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostType
+:hasPostType rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :userBehavior ;
+             rdfs:domain :SocialPost ;
+             rdfs:range <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostingTime
+:hasPostingTime rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :userBehavior ;
+                rdfs:domain :SocialPost ;
+                rdfs:range :PostingTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore
+:hasReadabilityScore rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :SocialPost ;
+                     rdfs:range :ReadabilityScore .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith
+:hasRelationWith rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isRelativeOf ;
+                 rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                 rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSentences
+:hasSentences rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasGrams ;
+              owl:inverseOf :isSentenceOf ;
+              rdfs:domain :SocialPost ;
+              rdfs:range :Sentences .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount
+:hasSocialMediaAccount rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                       rdfs:range :SocialMediaAccount .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost
+:hasSocialPost rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :SocialMediaAccount ;
+               rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms
+:hasSymptoms rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://schema.org/Patient>
+                                         :SocialMediaAccount
+                                       )
+                         ] ;
+             rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualFeatures
+:hasTextualFeatures rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SocialPost ;
+                    rdfs:range :TextualFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData
+:hasTextualPostMetaData rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :userBehavior ;
+                        rdfs:domain :SocialPost ;
+                        rdfs:range :TextualPostMetaData .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics
+:hasTopics rdf:type owl:ObjectProperty ;
+           rdfs:domain :SocialPost ;
+           rdfs:range <http://xmlns.com/foaf/0.1/topic> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTreated
+:hasTreated rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://schema.org/Physician> ;
+            rdfs:range <http://schema.org/Patient> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTrigrams
+:hasTrigrams rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasGrams ;
+             owl:inverseOf :isTrigramOf ;
+             rdfs:domain :SocialPost ;
+             rdfs:range <https://schema.org/Trigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams
+:hasUnigrams rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasGrams ;
+             owl:inverseOf :isUnigramOf ;
+             rdfs:domain :SocialPost ;
+             rdfs:range <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasVideoFeatures
+:hasVideoFeatures rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasMultimediaFeatures ;
+                  rdfs:domain :SocialPost ;
+                  rdfs:range :VideoFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf
+:isBigramOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :isGramOf ;
+            rdfs:domain <https://schema.org/Bigrams> ;
+            rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun
+:isFirstPersonPronoun rdf:type owl:ObjectProperty ;
+                      rdfs:domain <https://schema.org/Grams> ;
+                      rdfs:range :FirstPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf
+:isGramOf rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://schema.org/Grams> ;
+          rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf
+:isPhraseOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :isGramOf ;
+            rdfs:domain <http://purl.org/linguistics/gold/Phrases> ;
+            rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf
+:isRelativeOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSecondPersonPronoun
+:isSecondPersonPronoun rdf:type owl:ObjectProperty ;
+                       rdfs:domain <https://schema.org/Grams> ;
+                       rdfs:range :SecondPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf
+:isSentenceOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isGramOf ;
+              rdfs:domain :Sentences ;
+              rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isThirdPersonPronoun
+:isThirdPersonPronoun rdf:type owl:ObjectProperty ;
+                      rdfs:domain <https://schema.org/Grams> ;
+                      rdfs:range :ThirdPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf
+:isTrigramOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :isGramOf ;
+             rdfs:domain <https://schema.org/Trigrams> ;
+             rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf
+:isUnigramOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :isGramOf ;
+             rdfs:domain <https://schema.org/Unigrams> ;
+             rdfs:range :SocialPost .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isVerb
+:isVerb rdf:type owl:ObjectProperty ;
+        rdfs:domain <https://schema.org/Grams> ;
+        rdfs:range :Verbs .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior
+:userBehavior rdf:type owl:ObjectProperty ;
+              rdfs:domain :SocialPost ;
+              rdfs:range :UserBehavior .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex
+:automatedReadabilityIndex rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :readabilityScore ;
+                           rdfs:domain :ReadabilityScore ;
+                           rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#colemanLiauIndex
+:colemanLiauIndex rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :readabilityScore ;
+                  rdfs:domain :ReadabilityScore ;
+                  rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability
+:daleChallReadability rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :readabilityScore ;
+                      rdfs:domain :ReadabilityScore ;
+                      rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschKincaidGrade
+:fleschKincaidGrade rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :readabilityScore ;
+                    rdfs:domain :ReadabilityScore ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschReadingEase
+:fleschReadingEase rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :readabilityScore ;
+                   rdfs:domain :ReadabilityScore ;
+                   rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating
+:gobbledygookIndexRating rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :readabilityScore ;
+                         rdfs:domain :ReadabilityScore ;
+                         rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gunningFogIndex
+:gunningFogIndex rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :readabilityScore ;
+                 rdfs:domain :ReadabilityScore ;
+                 rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasArousal
+:hasArousal rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://schema.org/Affective> ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord
+:hasAverageLettersPerWord rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfLettersOrWords ;
+                          rdfs:domain :CountLetttersWords ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence
+:hasAverageWordsPerSentence rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :numberOfLettersOrWords ;
+                            rdfs:domain :CountLetttersWords ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent
+:hasContent rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://schema.org/Grams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasDominance
+:hasDominance rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://schema.org/Affective> ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise
+:hasExpertise rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://schema.org/Physician> ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees
+:hasFollowees rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :socialMediaAccount ;
+              rdfs:domain :SocialMediaAccount ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers
+:hasFollowers rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :socialMediaAccount ;
+              rdfs:domain :SocialMediaAccount ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency
+:hasFrequency rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876>
+                                          <http://xmlns.com/foaf/0.1/topic>
+                                          <https://schema.org/Grams>
+                                        )
+                          ] ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends
+:hasFriends rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :socialMediaAccount ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Facebook
+                                        :Twitter
+                                      )
+                        ] ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasInsomaniaIndex
+:hasInsomaniaIndex rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :socialMediaAccount ;
+                   rdfs:domain :SocialMediaAccount ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts
+:hasLikedNumberOfPosts rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :socialMediaAccount ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :Facebook
+                                                   :Reddit
+                                                   :Twitter
+                                                 )
+                                   ] ;
+                       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMaximumLettersPerWord
+:hasMaximumLettersPerWord rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfLettersOrWords ;
+                          rdfs:domain :CountLetttersWords ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMinimumLettersPerWord
+:hasMinimumLettersPerWord rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfLettersOrWords ;
+                          rdfs:domain :CountLetttersWords ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks
+:hasNumberOfExclamationMarks rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :numberOfPunctuationMarks ;
+                             rdfs:domain :CountPunctuations ;
+                             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativePhrases
+:hasNumberOfNegativePhrases rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :numberOfPhrasesOrSentences ;
+                            rdfs:domain :CountPhrasesSentences ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeSentences
+:hasNumberOfNegativeSentences rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :numberOfPhrasesOrSentences ;
+                              rdfs:domain :CountPhrasesSentences ;
+                              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords
+:hasNumberOfNegativeWords rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfLettersOrWords ;
+                          rdfs:domain :CountLetttersWords ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases
+:hasNumberOfPositivePhrases rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :numberOfPhrasesOrSentences ;
+                            rdfs:domain :CountPhrasesSentences ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveSentences
+:hasNumberOfPositiveSentences rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :numberOfPhrasesOrSentences ;
+                              rdfs:domain :CountPhrasesSentences ;
+                              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveWords
+:hasNumberOfPositiveWords rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfLettersOrWords ;
+                          rdfs:domain :CountLetttersWords ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts
+:hasNumberOfPosts rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :socialMediaAccount ;
+                  rdfs:domain :SocialMediaAccount ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks
+:hasNumberOfQuestionMarks rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :numberOfPunctuationMarks ;
+                          rdfs:domain :CountPunctuations ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfRepetitiveWords
+:hasNumberOfRepetitiveWords rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :numberOfLettersOrWords ;
+                            rdfs:domain :CountLetttersWords ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords
+:hasNumberOfStopWords rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :numberOfLettersOrWords ;
+                      rdfs:domain :CountLetttersWords ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfUniqueWords
+:hasNumberOfUniqueWords rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :numberOfLettersOrWords ;
+                        rdfs:domain :CountLetttersWords ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfWordsWithCapitalizedFirstLetter
+:hasNumberOfWordsWithCapitalizedFirstLetter rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf :numberOfLettersOrWords ;
+                                            rdfs:domain :CountLetttersWords ;
+                                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID
+:hasPatientID rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://schema.org/Patient> ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfFirstCapitalWordsToTotalWords
+:hasRatioOfFirstCapitalWordsToTotalWords rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf :numberOfLettersOrWords ;
+                                         rdfs:domain :CountLetttersWords ;
+                                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfPositiveWordsToNegativeWords
+:hasRatioOfPositiveWordsToNegativeWords rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf :numberOfLettersOrWords ;
+                                        rdfs:domain :CountLetttersWords ;
+                                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfUniqueWordsToTotalWords
+:hasRatioOfUniqueWordsToTotalWords rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :numberOfLettersOrWords ;
+                                   rdfs:domain :CountLetttersWords ;
+                                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistration
+:hasRegistration rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://schema.org/Physician> ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistrationID
+:hasRegistrationID rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://schema.org/Physician> ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText
+:hasText rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :socialPost ;
+         rdfs:domain :SocialPost ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasValence
+:hasValence rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://schema.org/Affective> ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf
+:isACommunityMemberOf rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :socialMediaAccount ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Facebook
+                                                  :Reddit
+                                                )
+                                  ] ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#linearWriteFormula
+:linearWriteFormula rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :readabilityScore ;
+                    rdfs:domain :ReadabilityScore ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfDifficultWords
+:numberOfDifficultWords rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :readabilityScore ;
+                        rdfs:domain :ReadabilityScore ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords
+:numberOfLettersOrWords rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :CountLetttersWords ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences
+:numberOfPhrasesOrSentences rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :CountPhrasesSentences ;
+                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks
+:numberOfPunctuationMarks rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :CountPunctuations ;
+                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined
+:numberOfcommunitiesJoined rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :socialMediaAccount ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( :Facebook
+                                                       :Reddit
+                                                     )
+                                       ] ;
+                           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt
+:postedAt rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :socialPost ;
+          rdfs:domain :SocialPost ;
+          rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore
+:readabilityScore rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ReadabilityScore ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:unionOf ( xsd:decimal
+                                             xsd:integer
+                                           )
+                             ] .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText
+:schoolGradeToUnderstandText rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :readabilityScore ;
+                             rdfs:domain :ReadabilityScore ;
+                             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount
+:socialMediaAccount rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :SocialMediaAccount ;
+                    rdfs:comment "A user account ID assigned to a person on any social platform." .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost
+:socialPost rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SocialPost ;
+            rdfs:comment "A unique post ID assigned to post by a person on particular social platform. Same post has different post ID on different platforms." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220> rdf:type owl:Class ;
+                                                            :previousLabel "Sensor" ;
+                                                            rdfs:comment "A superclass of all the sensors from which  data can be employed for depression analysis." ;
+                                                            rdfs:label "SensorData" .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> rdf:type owl:Class ;
+                                                           owl:disjointWith :SocialMediaAccount ,
+                                                                            :SocialPost ,
+                                                                            <http://xmlns.com/foaf/0.1/Person> ,
+                                                                            <https://w3id.org/timebank#MentalDisorder> ;
+                                                           rdfs:label "Symptoms" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000009
+<http://purl.obolibrary.org/obo/MFOEM_000009> rdf:type owl:Class ;
+                                              rdfs:subClassOf :DomainSpecific ;
+                                              rdfs:label "Anger" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000028
+<http://purl.obolibrary.org/obo/MFOEM_000028> rdf:type owl:Class ;
+                                              rdfs:subClassOf :DomainSpecific ;
+                                              rdfs:label "Anxiety" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000056
+<http://purl.obolibrary.org/obo/MFOEM_000056> rdf:type owl:Class ;
+                                              rdfs:subClassOf :DomainSpecific ;
+                                              rdfs:label "Sadness" .
+
+
+###  http://purl.org/cpr/clinical-finding
+<http://purl.org/cpr/clinical-finding> rdf:type owl:Class ;
+                                       :previousLabel "clinical-finding" ;
+                                       rdfs:comment "It is associated with the case treatment diary, physician and laboratory observations etc." ;
+                                       rdfs:label "ClinicalRecord" .
+
+
+###  http://purl.org/linguistics/gold/Features
+<http://purl.org/linguistics/gold/Features> rdf:type owl:Class ;
+                                            owl:disjointWith :SocialMediaAccount ,
+                                                             :SocialPost ,
+                                                             <http://xmlns.com/foaf/0.1/Person> ,
+                                                             <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://purl.org/linguistics/gold/Phrases
+<http://purl.org/linguistics/gold/Phrases> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://schema.org/Grams> .
+
+
+###  http://rdfs.org/sioc/ns#TypeOfPost
+<http://rdfs.org/sioc/ns#TypeOfPost> rdf:type owl:Class ;
+                                     rdfs:subClassOf :UserBehavior .
+
+
+###  http://schema.org/Patient
+<http://schema.org/Patient> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                            owl:disjointWith <http://schema.org/Physician> .
+
+
+###  http://schema.org/Physician
+<http://schema.org/Physician> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns
+<http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns> rdf:type owl:Class ;
+                                                       rdfs:subClassOf :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants
+:Antidepressants rdf:type owl:Class ;
+                 rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures
+:AudioFeatures rdf:type owl:Class ;
+               rdfs:subClassOf :MultimediaFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog
+:Blog rdf:type owl:Class ;
+      rdfs:subClassOf :SocialMediaAccount ;
+      owl:disjointWith :Facebook ,
+                       :Reddit ,
+                       :Twitter .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion
+:Confusion rdf:type owl:Class ;
+           rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords
+:CountLetttersWords rdf:type owl:Class ;
+                    rdfs:subClassOf :TextualPostMetaData .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences
+:CountPhrasesSentences rdf:type owl:Class ;
+                       rdfs:subClassOf :TextualPostMetaData .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations
+:CountPunctuations rdf:type owl:Class ;
+                   rdfs:subClassOf :TextualPostMetaData .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death
+:Death rdf:type owl:Class ;
+       rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Diagnosis
+:Diagnosis rdf:type owl:Class ;
+           rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disgust
+:Disgust rdf:type owl:Class ;
+         rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific
+:DomainSpecific rdf:type owl:Class ;
+                rdfs:subClassOf :TextualFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Excercise
+:Excercise rdf:type owl:Class ;
+           rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook
+:Facebook rdf:type owl:Class ;
+          rdfs:subClassOf :SocialMediaAccount ;
+          owl:disjointWith :Reddit ,
+                           :Twitter .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear
+:Fear rdf:type owl:Class ;
+      rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson
+:FirstPerson rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Happiness
+:Happiness rdf:type owl:Class ;
+           rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures
+:ImageFeatures rdf:type owl:Class ;
+               rdfs:subClassOf :MultimediaFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures
+:MultimediaFeatures rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/linguistics/gold/Features> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech
+:PartOfSpeech rdf:type owl:Class ;
+              rdfs:subClassOf :TextualFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime
+:PostingTime rdf:type owl:Class ;
+             rdfs:subClassOf :UserBehavior .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore
+:ReadabilityScore rdf:type owl:Class ;
+                  rdfs:subClassOf :TextualFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit
+:Reddit rdf:type owl:Class ;
+        rdfs:subClassOf :SocialMediaAccount ;
+        owl:disjointWith :Twitter .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson
+:SecondPerson rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences
+:Sentences rdf:type owl:Class ;
+           rdfs:subClassOf <https://schema.org/Grams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Shame
+:Shame rdf:type owl:Class ;
+       rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount
+:SocialMediaAccount rdf:type owl:Class ;
+                    owl:disjointWith :SocialPost ,
+                                     <http://xmlns.com/foaf/0.1/Person> ,
+                                     <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost
+:SocialPost rdf:type owl:Class ;
+            owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ,
+                             <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Suicide
+:Suicide rdf:type owl:Class ;
+         rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Surprise
+:Surprise rdf:type owl:Class ;
+          rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Swear
+:Swear rdf:type owl:Class ;
+       rdfs:subClassOf :DomainSpecific .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures
+:TextualFeatures rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/linguistics/gold/Features> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData
+:TextualPostMetaData rdf:type owl:Class ;
+                     rdfs:subClassOf :UserBehavior .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson
+:ThirdPerson rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter
+:Twitter rdf:type owl:Class ;
+         rdfs:subClassOf :SocialMediaAccount .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior
+:UserBehavior rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/linguistics/gold/Features> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs
+:Verbs rdf:type owl:Class ;
+       rdfs:subClassOf :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures
+:VideoFeatures rdf:type owl:Class ;
+               rdfs:subClassOf :MultimediaFeatures .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons
+:negative_emoticons rdf:type owl:Class ;
+                    rdfs:subClassOf <https://schema.org/Emoticons> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons
+:positive_emoticons rdf:type owl:Class ;
+                    rdfs:subClassOf <https://schema.org/Emoticons> .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   owl:disjointWith <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://xmlns.com/foaf/0.1/topic
+<http://xmlns.com/foaf/0.1/topic> rdf:type owl:Class ;
+                                  rdfs:subClassOf :TextualFeatures ;
+                                  rdfs:label "Topics" .
+
+
+###  https://schema.org/Affective
+<https://schema.org/Affective> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/linguistics/gold/Features> .
+
+
+###  https://schema.org/Bigrams
+<https://schema.org/Bigrams> rdf:type owl:Class ;
+                             rdfs:subClassOf <https://schema.org/Grams> .
+
+
+###  https://schema.org/Emoticons
+<https://schema.org/Emoticons> rdf:type owl:Class ;
+                               rdfs:subClassOf :MultimediaFeatures .
+
+
+###  https://schema.org/Grams
+<https://schema.org/Grams> rdf:type owl:Class ;
+                           rdfs:subClassOf :TextualFeatures .
+
+
+###  https://schema.org/SomaticSymptoms
+<https://schema.org/SomaticSymptoms> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/Trigrams
+<https://schema.org/Trigrams> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://schema.org/Grams> .
+
+
+###  https://schema.org/Unigrams
+<https://schema.org/Unigrams> rdf:type owl:Class ;
+                              rdfs:subClassOf <https://schema.org/Grams> .
+
+
+###  https://w3id.org/timebank#MentalDisorder
+<https://w3id.org/timebank#MentalDisorder> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adjective
+:adjective rdf:type owl:NamedIndividual ,
+                    :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adverb
+:adverb rdf:type owl:NamedIndividual ,
+                 :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#alarm
+:alarm rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder
+:anxiety_disorder rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#audio_post
+:audio_post rdf:type owl:NamedIndividual ,
+                     <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001
+:b_b001_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "want cut" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002
+:b_b001_001_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "tried getting" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001
+:b_f003_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "not working" ;
+                :hasFrequency 2 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002
+:b_f003_001_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "moving away" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001
+:b_r002_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "roller-coster" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001
+:b_r002_002_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "not working" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002
+:b_r002_002_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Bigrams> ;
+                :hasContent "few days" ;
+                :hasFrequency 3 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001
+:blog_001 rdf:type owl:NamedIndividual ,
+                   :Blog ;
+          :hasSocialPost :blog_post_001_001 ;
+          :hasFollowees 5 ;
+          :hasFollowers 10 ;
+          :hasNumberOfPosts 15 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001
+:blog_post_001_001 rdf:type owl:NamedIndividual ,
+                            :SocialPost ;
+                   :hasPhrases :b_b001_001_001 ,
+                               :b_b001_001_002 ,
+                               :ph_r002_002_001 ;
+                   :hasReadabilityScore :r3 ;
+                   :hasTextualPostMetaData :meta_004 ,
+                                           :meta_010 ;
+                   :hasTopics :fluoxetine ,
+                              <https://schema.org/digestive_problem> ;
+                   :hasUnigrams :u_b001_001_001 ,
+                                :u_b001_001_002 ;
+                   :hasText "Since many months I have not taken a break." ;
+                   :postedAt "2022-08-18T12:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blue_devils
+:blue_devils rdf:type owl:NamedIndividual ,
+                      :Disease .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blues
+:blues rdf:type owl:NamedIndividual ,
+                :Disease .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#citalopram
+:citalopram rdf:type owl:NamedIndividual ,
+                     :Antidepressants .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#comment
+:comment rdf:type owl:NamedIndividual ,
+                  <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#community_post
+:community_post rdf:type owl:NamedIndividual ,
+                         <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group
+:control_group rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#coster
+:coster rdf:type owl:NamedIndividual ,
+                 <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#death
+:death rdf:type owl:NamedIndividual ,
+                :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dejection
+:dejection rdf:type owl:NamedIndividual ,
+                    :Disease .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#demise
+:demise rdf:type owl:NamedIndividual ,
+                 :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder
+:depression_disorder rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#doubt
+:doubt rdf:type owl:NamedIndividual ,
+                :Confusion .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dread
+:dread rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dying
+:dying rdf:type owl:NamedIndividual ,
+                :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#escitalopram
+:escitalopram rdf:type owl:NamedIndividual ,
+                       :Antidepressants .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001
+:facebook_001 rdf:type owl:NamedIndividual ,
+                       :Facebook ;
+              :hasSocialPost :facebook_post_001_001 ;
+              :hasFriends 4 ;
+              :hasLikedNumberOfPosts 40 ;
+              :hasNumberOfPosts 80 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002
+:facebook_002 rdf:type owl:NamedIndividual ,
+                       :Facebook ;
+              :hasSocialPost :facebook_post_002_001 ;
+              :hasFollowees 10 ;
+              :hasFollowers 15 ;
+              :hasFriends 20 ;
+              :hasNumberOfPosts 25 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003
+:facebook_003 rdf:type owl:NamedIndividual ,
+                       :Facebook ;
+              :hasSocialPost :facebook_post_003_001 ;
+              :hasFollowees 150 ;
+              :hasFollowers 500 ;
+              :hasFriends 52 ;
+              :hasNumberOfPosts 150 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001
+:facebook_post_001_001 rdf:type owl:NamedIndividual ,
+                                :SocialPost ;
+                       :hasTopics :fluoxetine ,
+                                  <https://schema.org/feeling_of_tired> ;
+                       :hasText "hey buddy whats going on ?" ;
+                       :postedAt "2022-08-23T01:15:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001
+:facebook_post_002_001 rdf:type owl:NamedIndividual ,
+                                :SocialPost ;
+                       :hasReadabilityScore :r1 ;
+                       :hasTextualPostMetaData :meta_003 ,
+                                               :meta_007 ,
+                                               :meta_008 ;
+                       :hasUnigrams :u_f002_001_001 ,
+                                    :u_f002_001_002 ;
+                       :hasText "Hello friends, I going for a holiday today." ;
+                       :postedAt "2022-08-10T11:30:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001
+:facebook_post_003_001 rdf:type owl:NamedIndividual ,
+                                :SocialPost ;
+                       :hasBigrams :b_f003_001_001 ,
+                                   :b_f003_001_002 ;
+                       :hasReadabilityScore :r2 ;
+                       :hasTextualPostMetaData :meta_005 ,
+                                               :meta_009 ;
+                       :hasUnigrams :u_f003_001_001 ;
+                       :hasText "Not working for some days!" ;
+                       :postedAt "2020-08-01T00:15:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#few_days
+:few_days rdf:type owl:NamedIndividual ,
+                   <https://schema.org/Bigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_plural
+:first_person_plural rdf:type owl:NamedIndividual ,
+                              :FirstPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular
+:first_person_singular rdf:type owl:NamedIndividual ,
+                                :FirstPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine
+:fluoxetine rdf:type owl:NamedIndividual ,
+                     <http://xmlns.com/foaf/0.1/topic> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluvoxamine
+:fluvoxamine rdf:type owl:NamedIndividual ,
+                      :Antidepressants .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#forwarded_post
+:forwarded_post rdf:type owl:NamedIndividual ,
+                         <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fury
+:fury rdf:type owl:NamedIndividual ,
+               <http://purl.obolibrary.org/obo/MFOEM_000009> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#future_tense_verb
+:future_tense_verb rdf:type owl:NamedIndividual ,
+                            :Verbs .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#give_advice
+:give_advice rdf:type owl:NamedIndividual ,
+                      <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#holiday
+:holiday rdf:type owl:NamedIndividual ,
+                  <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#horror
+:horror rdf:type owl:NamedIndividual ,
+                 :Fear .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#i
+:i rdf:type owl:NamedIndividual ,
+            <https://schema.org/Unigrams> ;
+   :isFirstPersonPronoun :first_person_singular .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#image_post
+:image_post rdf:type owl:NamedIndividual ,
+                     <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indecision
+:indecision rdf:type owl:NamedIndividual ,
+                     :Confusion .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indignation
+:indignation rdf:type owl:NamedIndividual ,
+                      <http://purl.obolibrary.org/obo/MFOEM_000009> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ire
+:ire rdf:type owl:NamedIndividual ,
+              <http://purl.obolibrary.org/obo/MFOEM_000009> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#kill
+:kill rdf:type owl:NamedIndividual ,
+               :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killed
+:killed rdf:type owl:NamedIndividual ,
+                 :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killing
+:killing rdf:type owl:NamedIndividual ,
+                  :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#link_url_post
+:link_url_post rdf:type owl:NamedIndividual ,
+                        <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#melancholia
+:melancholia rdf:type owl:NamedIndividual ,
+                      :Disease .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001
+:meta_001 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasNumberOfStopWords 5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002
+:meta_002 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasNumberOfNegativeWords 5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003
+:meta_003 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :numberOfLettersOrWords 25 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004
+:meta_004 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasAverageLettersPerWord 9 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005
+:meta_005 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasAverageLettersPerWord 4 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006
+:meta_006 rdf:type owl:NamedIndividual ,
+                   :CountPunctuations ;
+          :hasNumberOfQuestionMarks 3 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007
+:meta_007 rdf:type owl:NamedIndividual ,
+                   :CountPunctuations ;
+          :hasNumberOfQuestionMarks 2 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008
+:meta_008 rdf:type owl:NamedIndividual ,
+                   :CountPhrasesSentences ;
+          :hasNumberOfPositivePhrases 5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009
+:meta_009 rdf:type owl:NamedIndividual ,
+                   :CountPunctuations ;
+          :hasNumberOfExclamationMarks 2 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010
+:meta_010 rdf:type owl:NamedIndividual ,
+                   :CountPhrasesSentences ;
+          :hasNumberOfPositivePhrases 3 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011
+:meta_011 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasAverageWordsPerSentence 15 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012
+:meta_012 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasAverageWordsPerSentence 25 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013
+:meta_013 rdf:type owl:NamedIndividual ,
+                   :CountLetttersWords ;
+          :hasAverageWordsPerSentence 12 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#months
+:months rdf:type owl:NamedIndividual ,
+                 <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourn
+:mourn rdf:type owl:NamedIndividual ,
+                :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourning
+:mourning rdf:type owl:NamedIndividual ,
+                   :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#moving_away
+:moving_away rdf:type owl:NamedIndividual ,
+                      <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murder
+:murder rdf:type owl:NamedIndividual ,
+                 :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murdered
+:murdered rdf:type owl:NamedIndividual ,
+                   :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#nervousness
+:nervousness rdf:type owl:NamedIndividual ,
+                      <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#non_odd_hour_post
+:non_odd_hour_post rdf:type owl:NamedIndividual ,
+                            :PostingTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#not_working
+:not_working rdf:type owl:NamedIndividual ,
+                      <https://schema.org/Bigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#noun
+:noun rdf:type owl:NamedIndividual ,
+               :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#obsessive_complusive_disorder
+:obsessive_complusive_disorder rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#odd_hour_post
+:odd_hour_post rdf:type owl:NamedIndividual ,
+                        :PostingTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#panic
+:panic rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passed_away
+:passed_away rdf:type owl:NamedIndividual ,
+                      :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passing_away
+:passing_away rdf:type owl:NamedIndividual ,
+                       :Death .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#past_tense_verb
+:past_tense_verb rdf:type owl:NamedIndividual ,
+                          :Verbs .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001
+:patient_001 rdf:type owl:NamedIndividual ,
+                      <http://schema.org/Patient> ;
+             <http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder> :depression_disorder ;
+             :hasSocialMediaAccount :blog_001 ;
+             :hasSymptoms <https://schema.org/sleeping_disturbance> ,
+                          <https://schema.org/social_withdrawal> ;
+             :hasName "ABC_001" ;
+             :hasPatientID "patient_ID_001" .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_002
+:patient_002 rdf:type owl:NamedIndividual ,
+                      <http://schema.org/Patient> ;
+             <http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder> :anxiety_disorder ;
+             :hasRelationWith :patient_001 ;
+             :hasSocialMediaAccount :facebook_002 ,
+                                    :reddit_002 ;
+             :hasSymptoms <https://schema.org/pain> ,
+                          <https://schema.org/sad> ;
+             :hasName "ABC_002" ;
+             :hasPatientID "patient_ID_002" .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_003
+:patient_003 rdf:type owl:NamedIndividual ,
+                      <http://schema.org/Patient> ;
+             <http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder> :depression_disorder ;
+             :hasSocialMediaAccount :facebook_003 ;
+             :hasSymptoms <https://schema.org/loss_of_appetite> ,
+                          <https://schema.org/loss_of_energy> ,
+                          <https://schema.org/not_able_to_sleep> ;
+             :hasName "ABC_003" ;
+             :hasPatientID "patient_ID_003" .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#person_001
+:person_001 rdf:type owl:NamedIndividual ,
+                     <http://xmlns.com/foaf/0.1/Person> ;
+            <http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder> :control_group ;
+            :hasSocialMediaAccount :facebook_001 ;
+            :hasName "control_001" .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001
+:ph_r002_002_001 rdf:type owl:NamedIndividual ,
+                          <http://purl.org/linguistics/gold/Phrases> ;
+                 :hasContent "since few days" ;
+                 :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#post_traumatic_stress_disorder
+:post_traumatic_stress_disorder rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#pre_determiner
+:pre_determiner rdf:type owl:NamedIndividual ,
+                         :PartOfSpeech .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#present_tense_verb
+:present_tense_verb rdf:type owl:NamedIndividual ,
+                             :Verbs .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#question_centric_post
+:question_centric_post rdf:type owl:NamedIndividual ,
+                                <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1
+:r1 rdf:type owl:NamedIndividual ,
+             :ReadabilityScore ;
+    :automatedReadabilityIndex 1.5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2
+:r2 rdf:type owl:NamedIndividual ,
+             :ReadabilityScore ;
+    :gobbledygookIndexRating 10 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3
+:r3 rdf:type owl:NamedIndividual ,
+             :ReadabilityScore ;
+    :daleChallReadability 2.5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4
+:r4 rdf:type owl:NamedIndividual ,
+             :ReadabilityScore ;
+    :schoolGradeToUnderstandText 4 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#rage
+:rage rdf:type owl:NamedIndividual ,
+               <http://purl.obolibrary.org/obo/MFOEM_000009> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002
+:reddit_002 rdf:type owl:NamedIndividual ,
+                     :Reddit ;
+            :hasSocialPost :reddit_post_002_001 ,
+                           :reddit_post_002_002 ,
+                           :reddit_post_002_003 ;
+            :hasLikedNumberOfPosts 200 ;
+            :isACommunityMemberOf "Suicide-Watch" ,
+                                  "depression-community" ;
+            :numberOfcommunitiesJoined 5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001
+:reddit_post_002_001 rdf:type owl:NamedIndividual ,
+                              :SocialPost ;
+                     :hasBigrams :b_r002_001_001 ;
+                     :hasReadabilityScore :r4 ;
+                     :hasTextualPostMetaData :meta_001 ,
+                                             :meta_011 ;
+                     :hasUnigrams :u_r002_001_001 ,
+                                  :u_r002_001_002 ;
+                     :hasText "Life has become roller coster." ;
+                     :postedAt "2022-08-21T03:25:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002
+:reddit_post_002_002 rdf:type owl:NamedIndividual ,
+                              :SocialPost ;
+                     :hasBigrams :b_r002_002_001 ,
+                                 :b_r002_002_002 ;
+                     :hasPhrases :ph_r002_002_001 ;
+                     :hasTextualPostMetaData :meta_002 ,
+                                             :meta_006 ,
+                                             :meta_012 ;
+                     :hasUnigrams :u_r002_002_001 ,
+                                  :u_r002_002_002 ;
+                     :hasText "I am not working since few days?" ;
+                     :postedAt "2022-08-20T04:15:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003
+:reddit_post_002_003 rdf:type owl:NamedIndividual ,
+                              :SocialPost ;
+                     :hasTextualPostMetaData :meta_013 ;
+                     :hasText "This post is added to check average of number of words per post." ;
+                     :postedAt "2022-08-28T10:13:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restless
+:restless rdf:type owl:NamedIndividual ,
+                   <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restlessness
+:restlessness rdf:type owl:NamedIndividual ,
+                       <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller
+:roller rdf:type owl:NamedIndividual ,
+                 <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller_coster
+:roller_coster rdf:type owl:NamedIndividual ,
+                        <https://schema.org/Bigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_plural
+:second_person_plural rdf:type owl:NamedIndividual ,
+                               :SecondPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_singular
+:second_person_singular rdf:type owl:NamedIndividual ,
+                                 :SecondPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#self_pity
+:self_pity rdf:type owl:NamedIndividual ,
+                    <http://purl.obolibrary.org/obo/MFOEM_000056> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since
+:since rdf:type owl:NamedIndividual ,
+                <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since_few_days
+:since_few_days rdf:type owl:NamedIndividual ,
+                         <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_plural
+:third_person_plural rdf:type owl:NamedIndividual ,
+                              :ThirdPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_singular
+:third_person_singular rdf:type owl:NamedIndividual ,
+                                :ThirdPerson .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#timeline_post
+:timeline_post rdf:type owl:NamedIndividual ,
+                        <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#tried_getting
+:tried_getting rdf:type owl:NamedIndividual ,
+                        <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001
+:u_b001_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "since" ;
+                :hasFrequency 2 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002
+:u_b001_001_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "months" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001
+:u_f002_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "i" ;
+                :hasFrequency 5 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002
+:u_f002_001_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "holiday" ;
+                :hasFrequency 3 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001
+:u_f003_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "working" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001
+:u_r002_001_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "coster" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002
+:u_r002_001_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "roller" ;
+                :hasFrequency 2 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001
+:u_r002_002_001 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "since" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002
+:u_r002_002_002 rdf:type owl:NamedIndividual ,
+                         <https://schema.org/Unigrams> ;
+                :hasContent "working" ;
+                :hasFrequency 1 .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertain
+:uncertain rdf:type owl:NamedIndividual ,
+                    :Confusion .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertainty
+:uncertainty rdf:type owl:NamedIndividual ,
+                      :Confusion .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uneasiness
+:uneasiness rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/MFOEM_000028> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#video_post
+:video_post rdf:type owl:NamedIndividual ,
+                     <http://rdfs.org/sioc/ns#TypeOfPost> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#want_cut
+:want_cut rdf:type owl:NamedIndividual ,
+                   <http://purl.org/linguistics/gold/Phrases> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#working
+:working rdf:type owl:NamedIndividual ,
+                  <https://schema.org/Unigrams> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#wrath
+:wrath rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/MFOEM_000009> .
+
+
+###  https://schema.org/ache
+<https://schema.org/ache> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                          owl:sameAs <https://schema.org/cramp> ,
+                                     <https://schema.org/headache> ,
+                                     <https://schema.org/pain> .
+
+
+###  https://schema.org/cramp
+
+###  https://schema.org/headache
+
+###  https://schema.org/pain
+
+###  https://schema.org/anxiety
+<https://schema.org/anxiety> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                             owl:sameAs <https://schema.org/anxious> .
+
+
+###  https://schema.org/anxious
+
+###  https://schema.org/anxious
+<https://schema.org/anxious> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/appetite_loss
+<https://schema.org/appetite_loss> rdf:type owl:NamedIndividual ,
+                                            <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                   owl:sameAs <https://schema.org/loss_of_appetite> .
+
+
+###  https://schema.org/loss_of_appetite
+
+###  https://schema.org/ashamed
+<https://schema.org/ashamed> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                             owl:sameAs <https://schema.org/shame> .
+
+
+###  https://schema.org/shame
+
+###  https://schema.org/change_in_eating_habit
+<https://schema.org/change_in_eating_habit> rdf:type owl:NamedIndividual ,
+                                                     <https://schema.org/SomaticSymptoms> ;
+                                            owl:sameAs <https://schema.org/eating_problem> .
+
+
+###  https://schema.org/eating_problem
+
+###  https://schema.org/change_in_sleeping_habit
+<https://schema.org/change_in_sleeping_habit> rdf:type owl:NamedIndividual ,
+                                                       <https://schema.org/SomaticSymptoms> ;
+                                              owl:sameAs <https://schema.org/sleeping_problem> .
+
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/concentration_problem
+<https://schema.org/concentration_problem> rdf:type owl:NamedIndividual ,
+                                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/cramp
+<https://schema.org/cramp> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                           owl:sameAs <https://schema.org/cramps> ,
+                                      <https://schema.org/pain> .
+
+
+###  https://schema.org/cramps
+
+###  https://schema.org/pain
+
+###  https://schema.org/cramps
+<https://schema.org/cramps> rdf:type owl:NamedIndividual ,
+                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                            owl:sameAs <https://schema.org/headache> .
+
+
+###  https://schema.org/headache
+
+###  https://schema.org/despair
+<https://schema.org/despair> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/digestive_problem
+<https://schema.org/digestive_problem> rdf:type owl:NamedIndividual ,
+                                                [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://xmlns.com/foaf/0.1/topic>
+                                                                <https://schema.org/SomaticSymptoms>
+                                                              )
+                                                ] ;
+                                       owl:sameAs <https://schema.org/eating_disturbance> .
+
+
+###  https://schema.org/eating_disturbance
+
+###  https://schema.org/diminished_interest
+<https://schema.org/diminished_interest> rdf:type owl:NamedIndividual ,
+                                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                         owl:sameAs <https://schema.org/diminished_pleasure> ,
+                                                    <https://schema.org/loss_of_pleasure> .
+
+
+###  https://schema.org/diminished_pleasure
+
+###  https://schema.org/loss_of_pleasure
+
+###  https://schema.org/diminished_pleasure
+<https://schema.org/diminished_pleasure> rdf:type owl:NamedIndividual ,
+                                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                         owl:sameAs <https://schema.org/loss_of_pleasure> .
+
+
+###  https://schema.org/loss_of_pleasure
+
+###  https://schema.org/discouragement
+<https://schema.org/discouragement> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/eating_disturbance
+<https://schema.org/eating_disturbance> rdf:type owl:NamedIndividual ,
+                                                 <https://schema.org/SomaticSymptoms> ;
+                                        owl:sameAs <https://schema.org/eating_problem> ,
+                                                   <https://schema.org/excessive_eating> ,
+                                                   <https://schema.org/over_eating> .
+
+
+###  https://schema.org/eating_problem
+
+###  https://schema.org/excessive_eating
+
+###  https://schema.org/over_eating
+
+###  https://schema.org/eating_problem
+<https://schema.org/eating_problem> rdf:type owl:NamedIndividual ,
+                                             <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/empty
+<https://schema.org/empty> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/excessive_eating
+<https://schema.org/excessive_eating> rdf:type owl:NamedIndividual ,
+                                               <https://schema.org/SomaticSymptoms> ;
+                                      owl:sameAs <https://schema.org/over_eating> .
+
+
+###  https://schema.org/over_eating
+
+###  https://schema.org/excessive_sleeping
+<https://schema.org/excessive_sleeping> rdf:type owl:NamedIndividual ,
+                                                 <https://schema.org/SomaticSymptoms> ;
+                                        owl:sameAs <https://schema.org/over_sleeping> ,
+                                                   <https://schema.org/sleeping_disturbance> ,
+                                                   <https://schema.org/sleeping_too_much> .
+
+
+###  https://schema.org/over_sleeping
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/feeling_of_grief
+<https://schema.org/feeling_of_grief> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/feeling_of_hopelessness
+<https://schema.org/feeling_of_hopelessness> rdf:type owl:NamedIndividual ,
+                                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                             owl:sameAs <https://schema.org/helplessness> .
+
+
+###  https://schema.org/helplessness
+
+###  https://schema.org/feeling_of_sadness
+<https://schema.org/feeling_of_sadness> rdf:type owl:NamedIndividual ,
+                                                 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                        owl:sameAs <https://schema.org/sadness> .
+
+
+###  https://schema.org/sadness
+
+###  https://schema.org/feeling_of_tired
+<https://schema.org/feeling_of_tired> rdf:type owl:NamedIndividual ,
+                                               [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876>
+                                                               <http://xmlns.com/foaf/0.1/topic>
+                                                             )
+                                               ] ;
+                                      owl:sameAs <https://schema.org/loss_of_energy> ,
+                                                 <https://schema.org/reduced_energy> ,
+                                                 <https://schema.org/tire> ,
+                                                 <https://schema.org/tired> .
+
+
+###  https://schema.org/loss_of_energy
+
+###  https://schema.org/reduced_energy
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/feeling_of_unhappiness
+<https://schema.org/feeling_of_unhappiness> rdf:type owl:NamedIndividual ,
+                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                            owl:sameAs <https://schema.org/sad> .
+
+
+###  https://schema.org/sad
+
+###  https://schema.org/feeling_of_worry
+<https://schema.org/feeling_of_worry> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                      owl:sameAs <https://schema.org/worry> .
+
+
+###  https://schema.org/worry
+
+###  https://schema.org/feeling_of_worthlessness
+<https://schema.org/feeling_of_worthlessness> rdf:type owl:NamedIndividual ,
+                                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                              owl:sameAs <https://schema.org/worthlessness> .
+
+
+###  https://schema.org/worthlessness
+
+###  https://schema.org/guilty
+<https://schema.org/guilty> rdf:type owl:NamedIndividual ,
+                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/headache
+<https://schema.org/headache> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/pain> .
+
+
+###  https://schema.org/pain
+
+###  https://schema.org/helpless
+<https://schema.org/helpless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/helplessness> .
+
+
+###  https://schema.org/helplessness
+
+###  https://schema.org/helplessness
+<https://schema.org/helplessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/hopeless
+<https://schema.org/hopeless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/hopelessness> .
+
+
+###  https://schema.org/hopelessness
+
+###  https://schema.org/hopelessness
+<https://schema.org/hopelessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/insomania
+<https://schema.org/insomania> rdf:type owl:NamedIndividual ,
+                                        <https://schema.org/SomaticSymptoms> ;
+                               owl:sameAs <https://schema.org/sleeping_disturbance> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/irritable
+<https://schema.org/irritable> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/loss_of_appetite
+<https://schema.org/loss_of_appetite> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/loss_of_energy
+<https://schema.org/loss_of_energy> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                    owl:sameAs <https://schema.org/reduced_energy> ,
+                                               <https://schema.org/tire> ,
+                                               <https://schema.org/tired> .
+
+
+###  https://schema.org/reduced_energy
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/loss_of_pleasure
+<https://schema.org/loss_of_pleasure> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/low_mood
+<https://schema.org/low_mood> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/low_self_esteem
+<https://schema.org/low_self_esteem> rdf:type owl:NamedIndividual ,
+                                              <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/memory_problem
+<https://schema.org/memory_problem> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/not_able_to_sleep
+<https://schema.org/not_able_to_sleep> rdf:type owl:NamedIndividual ,
+                                                <https://schema.org/SomaticSymptoms> ;
+                                       owl:sameAs <https://schema.org/sleeping_disturbance> ,
+                                                  <https://schema.org/sleeping_problem> ,
+                                                  <https://schema.org/unable_to_sleep> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/over_eating
+<https://schema.org/over_eating> rdf:type owl:NamedIndividual ,
+                                          <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/over_sleeping
+<https://schema.org/over_sleeping> rdf:type owl:NamedIndividual ,
+                                            <https://schema.org/SomaticSymptoms> ;
+                                   owl:sameAs <https://schema.org/sleeping_disturbance> ,
+                                              <https://schema.org/sleeping_too_much> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/pain
+<https://schema.org/pain> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/reduced_energy
+<https://schema.org/reduced_energy> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                    owl:sameAs <https://schema.org/tire> ,
+                                               <https://schema.org/tired> .
+
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/remembering_details_problem
+<https://schema.org/remembering_details_problem> rdf:type owl:NamedIndividual ,
+                                                          <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/restless
+<https://schema.org/restless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/restlessness> .
+
+
+###  https://schema.org/restlessness
+
+###  https://schema.org/restlessness
+<https://schema.org/restlessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/sad
+<https://schema.org/sad> rdf:type owl:NamedIndividual ,
+                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                         owl:sameAs <https://schema.org/sadness> .
+
+
+###  https://schema.org/sadness
+
+###  https://schema.org/sadness
+<https://schema.org/sadness> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/shame
+<https://schema.org/shame> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/sleeping_disturbance
+<https://schema.org/sleeping_disturbance> rdf:type owl:NamedIndividual ,
+                                                   <https://schema.org/SomaticSymptoms> ;
+                                          owl:sameAs <https://schema.org/sleeping_problem> ,
+                                                     <https://schema.org/unable_to_sleep> ;
+                                          :hasFrequency 4 .
+
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/sleeping_problem
+<https://schema.org/sleeping_problem> rdf:type owl:NamedIndividual ,
+                                               <https://schema.org/SomaticSymptoms> ;
+                                      owl:sameAs <https://schema.org/sleeping_too_much> ,
+                                                 <https://schema.org/unable_to_sleep> .
+
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/sleeping_too_much
+<https://schema.org/sleeping_too_much> rdf:type owl:NamedIndividual ,
+                                                <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/social_withdraw
+<https://schema.org/social_withdraw> rdf:type owl:NamedIndividual ,
+                                              <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                     owl:sameAs <https://schema.org/social_withdrawal> .
+
+
+###  https://schema.org/social_withdrawal
+
+###  https://schema.org/social_withdrawal
+<https://schema.org/social_withdrawal> rdf:type owl:NamedIndividual ,
+                                                <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/the_blue
+<https://schema.org/the_blue> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/the_blues> .
+
+
+###  https://schema.org/the_blues
+
+###  https://schema.org/the_blues
+<https://schema.org/the_blues> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/thought_of_death
+<https://schema.org/thought_of_death> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                      owl:sameAs <https://schema.org/thought_of_suicide> .
+
+
+###  https://schema.org/thought_of_suicide
+
+###  https://schema.org/thought_of_suicide
+<https://schema.org/thought_of_suicide> rdf:type owl:NamedIndividual ,
+                                                 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/tire
+<https://schema.org/tire> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                          owl:sameAs <https://schema.org/tired> .
+
+
+###  https://schema.org/tired
+
+###  https://schema.org/tired
+<https://schema.org/tired> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/unable_to_sleep
+<https://schema.org/unable_to_sleep> rdf:type owl:NamedIndividual ,
+                                              <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/worry
+<https://schema.org/worry> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/worthless
+<https://schema.org/worthless> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                               owl:sameAs <https://schema.org/worthlessness> .
+
+
+###  https://schema.org/worthlessness
+
+###  https://schema.org/worthlessness
+<https://schema.org/worthlessness> rdf:type owl:NamedIndividual ,
+                                            <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+[ :hasExpertise ""
+] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,3451 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://xmlns.com/foaf/0.1/topic"
+    }, {
+      "@id" : "https://schema.org/SomaticSymptoms"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+    }, {
+      "@id" : "http://xmlns.com/foaf/0.1/topic"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Patient"
+    }, {
+      "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+    }, {
+      "@id" : "http://xmlns.com/foaf/0.1/topic"
+    }, {
+      "@id" : "https://schema.org/Grams"
+    } ]
+  } ]
+}, {
+  "@id" : "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel" : [ {
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A superclass of all the sensors from which  data can be employed for depression analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SensorData"
+  } ]
+}, {
+  "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Symptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  }, {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anxiety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/MFOEM_000056",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sadness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://purl.org/cpr/clinical-finding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel" : [ {
+    "@value" : "clinical-finding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is associated with the case treatment diary, physician and laboratory observations etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClinicalRecord"
+  } ]
+}, {
+  "@id" : "http://purl.org/linguistics/gold/Features",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  }, {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://purl.org/linguistics/gold/Phrases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#TypeOfPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"
+  } ]
+}, {
+  "@id" : "http://schema.org/Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://schema.org/Physician"
+  } ]
+}, {
+  "@id" : "http://schema.org/Physician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Diagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disgust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Excercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Happiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Features"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Shame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  }, {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  }, {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Suicide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Surprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Swear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Features"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Features"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adjective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adverb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#alarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#audio_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "want cut"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "tried getting"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "not working"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "moving away"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "roller-coster"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "not working"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "few days"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "Since many months I have not taken a break."
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine"
+  }, {
+    "@id" : "https://schema.org/digestive_problem"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-18T12:00:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blue_devils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blues",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#citalopram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#colemanLiauIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#community_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#coster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dejection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#demise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#doubt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#escitalopram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "40"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "80"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "20"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "25"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "150"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "500"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "52"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "150"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "hey buddy whats going on ?"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine"
+  }, {
+    "@id" : "https://schema.org/feeling_of_tired"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-23T01:15:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "Hello friends, I going for a holiday today."
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-10T11:30:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "Not working for some days!"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-08-01T00:15:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#few_days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_plural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschKincaidGrade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschReadingEase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluvoxamine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#forwarded_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fury",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#future_tense_verb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#give_advice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gunningFogIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAffective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Affective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasArousal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Affective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAudioFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasDominance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Affective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Emoticons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Physician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Features"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasImageFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasInsomaniaIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMaximumLettersPerWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMinimumLettersPerWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNegativeEmoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativePhrases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeSentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveSentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfRepetitiveWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfUniqueWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfWordsWithCapitalizedFirstLetter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPositiveEmoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfFirstCapitalWordsToTotalWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfPositiveWordsToNegativeWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfUniqueWordsToTotalWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Physician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistrationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Physician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTreated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Physician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTrigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Trigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasValence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Affective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasVideoFeatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#holiday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#horror",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#i",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#image_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indignation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSecondPersonPronoun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isThirdPersonPronoun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Trigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isVerb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#kill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#linearWriteFormula",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#link_url_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#melancholia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "25"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "25"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "12"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#months",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#moving_away",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murdered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Emoticons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#nervousness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#non_odd_hour_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#not_working",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#noun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfDifficultWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#obsessive_complusive_disorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#odd_hour_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#panic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passed_away",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passing_away",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#past_tense_verb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName" : [ {
+    "@value" : "ABC_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID" : [ {
+    "@value" : "patient_ID_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms" : [ {
+    "@id" : "https://schema.org/sleeping_disturbance"
+  }, {
+    "@id" : "https://schema.org/social_withdrawal"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName" : [ {
+    "@value" : "ABC_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID" : [ {
+    "@value" : "patient_ID_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms" : [ {
+    "@id" : "https://schema.org/pain"
+  }, {
+    "@id" : "https://schema.org/sad"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName" : [ {
+    "@value" : "ABC_003"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID" : [ {
+    "@value" : "patient_ID_003"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms" : [ {
+    "@id" : "https://schema.org/loss_of_appetite"
+  }, {
+    "@id" : "https://schema.org/loss_of_energy"
+  }, {
+    "@id" : "https://schema.org/not_able_to_sleep"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#person_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName" : [ {
+    "@value" : "control_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "since few days"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Emoticons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#post_traumatic_stress_disorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#pre_determiner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#present_tense_verb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#question_centric_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#rage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "200"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf" : [ {
+    "@value" : "Suicide-Watch"
+  }, {
+    "@value" : "depression-community"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "Life has become roller coster."
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-21T03:25:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "I am not working since few days?"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001"
+  }, {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-20T04:15:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText" : [ {
+    "@value" : "This post is added to check average of number of words per post."
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-28T10:13:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restlessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller_coster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Bigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_plural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_singular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#self_pity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000056"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since_few_days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A user account ID assigned to a person on any social platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A unique post ID assigned to post by a person on particular social platform. Same post has different post ID on different platforms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_plural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_singular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#timeline_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#tried_getting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "since"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "months"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "i"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "holiday"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "working"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "coster"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "roller"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "since"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent" : [ {
+    "@value" : "working"
+  } ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertainty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uneasiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000028"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#video_post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#TypeOfPost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#want_cut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Phrases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#working",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Unigrams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#wrath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/MFOEM_000009"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/timebank#MentalDisorder"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Topics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "https://schema.org/Affective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/linguistics/gold/Features"
+  } ]
+}, {
+  "@id" : "https://schema.org/Bigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "https://schema.org/Emoticons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"
+  } ]
+}, {
+  "@id" : "https://schema.org/Grams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"
+  } ]
+}, {
+  "@id" : "https://schema.org/SomaticSymptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/Trigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "https://schema.org/Unigrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Grams"
+  } ]
+}, {
+  "@id" : "https://schema.org/ache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/cramp"
+  }, {
+    "@id" : "https://schema.org/headache"
+  }, {
+    "@id" : "https://schema.org/pain"
+  } ]
+}, {
+  "@id" : "https://schema.org/anxiety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/anxious"
+  } ]
+}, {
+  "@id" : "https://schema.org/anxious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/appetite_loss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/loss_of_appetite"
+  } ]
+}, {
+  "@id" : "https://schema.org/ashamed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/shame"
+  } ]
+}, {
+  "@id" : "https://schema.org/change_in_eating_habit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/eating_problem"
+  } ]
+}, {
+  "@id" : "https://schema.org/change_in_sleeping_habit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_problem"
+  } ]
+}, {
+  "@id" : "https://schema.org/concentration_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/cramp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/cramps"
+  }, {
+    "@id" : "https://schema.org/pain"
+  } ]
+}, {
+  "@id" : "https://schema.org/cramps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/headache"
+  } ]
+}, {
+  "@id" : "https://schema.org/despair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/digestive_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/eating_disturbance"
+  } ]
+}, {
+  "@id" : "https://schema.org/diminished_interest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/diminished_pleasure"
+  }, {
+    "@id" : "https://schema.org/loss_of_pleasure"
+  } ]
+}, {
+  "@id" : "https://schema.org/diminished_pleasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/loss_of_pleasure"
+  } ]
+}, {
+  "@id" : "https://schema.org/discouragement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/eating_disturbance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/eating_problem"
+  }, {
+    "@id" : "https://schema.org/excessive_eating"
+  }, {
+    "@id" : "https://schema.org/over_eating"
+  } ]
+}, {
+  "@id" : "https://schema.org/eating_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ]
+}, {
+  "@id" : "https://schema.org/empty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/excessive_eating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/over_eating"
+  } ]
+}, {
+  "@id" : "https://schema.org/excessive_sleeping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/over_sleeping"
+  }, {
+    "@id" : "https://schema.org/sleeping_disturbance"
+  }, {
+    "@id" : "https://schema.org/sleeping_too_much"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_grief",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_hopelessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/helplessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_sadness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sadness"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_tired",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/loss_of_energy"
+  }, {
+    "@id" : "https://schema.org/reduced_energy"
+  }, {
+    "@id" : "https://schema.org/tire"
+  }, {
+    "@id" : "https://schema.org/tired"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_unhappiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sad"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_worry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/worry"
+  } ]
+}, {
+  "@id" : "https://schema.org/feeling_of_worthlessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/worthlessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/guilty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/headache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/pain"
+  } ]
+}, {
+  "@id" : "https://schema.org/helpless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/helplessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/helplessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/hopeless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/hopelessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/hopelessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/insomania",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_disturbance"
+  } ]
+}, {
+  "@id" : "https://schema.org/irritable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/loss_of_appetite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/loss_of_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/reduced_energy"
+  }, {
+    "@id" : "https://schema.org/tire"
+  }, {
+    "@id" : "https://schema.org/tired"
+  } ]
+}, {
+  "@id" : "https://schema.org/loss_of_pleasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/low_mood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/low_self_esteem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/memory_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/not_able_to_sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_disturbance"
+  }, {
+    "@id" : "https://schema.org/sleeping_problem"
+  }, {
+    "@id" : "https://schema.org/unable_to_sleep"
+  } ]
+}, {
+  "@id" : "https://schema.org/over_eating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ]
+}, {
+  "@id" : "https://schema.org/over_sleeping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_disturbance"
+  }, {
+    "@id" : "https://schema.org/sleeping_too_much"
+  } ]
+}, {
+  "@id" : "https://schema.org/pain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/reduced_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/tire"
+  }, {
+    "@id" : "https://schema.org/tired"
+  } ]
+}, {
+  "@id" : "https://schema.org/remembering_details_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/restless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/restlessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/restlessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/sad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sadness"
+  } ]
+}, {
+  "@id" : "https://schema.org/sadness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/shame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/sleeping_disturbance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_problem"
+  }, {
+    "@id" : "https://schema.org/unable_to_sleep"
+  } ]
+}, {
+  "@id" : "https://schema.org/sleeping_problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/sleeping_too_much"
+  }, {
+    "@id" : "https://schema.org/unable_to_sleep"
+  } ]
+}, {
+  "@id" : "https://schema.org/sleeping_too_much",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ]
+}, {
+  "@id" : "https://schema.org/social_withdraw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/social_withdrawal"
+  } ]
+}, {
+  "@id" : "https://schema.org/social_withdrawal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/the_blue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/the_blues"
+  } ]
+}, {
+  "@id" : "https://schema.org/the_blues",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/thought_of_death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/thought_of_suicide"
+  } ]
+}, {
+  "@id" : "https://schema.org/thought_of_suicide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/tire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/tired"
+  } ]
+}, {
+  "@id" : "https://schema.org/tired",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/unable_to_sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/SomaticSymptoms"
+  } ]
+}, {
+  "@id" : "https://schema.org/worry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://schema.org/worthless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://schema.org/worthlessness"
+  } ]
+}, {
+  "@id" : "https://schema.org/worthlessness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"
+  } ]
+}, {
+  "@id" : "https://w3id.org/timebank#MentalDisorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

@@ -1,0 +1,4160 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:being="http://contextus.net/ontology/ontomedia/ext/common/being#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12"/>
+        <license>https://creativecommons.org/licenses/by/4.0/</license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#license"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#previousLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder -->
+
+
+    <owl:ObjectProperty rdf:about="http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder">
+        <rdfs:domain rdf:resource="http://schema.org/Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#belongsTo">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAffective -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAffective">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Affective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAudioFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAudioFeatures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Bigrams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Emoticons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFeatures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://purl.org/linguistics/gold/Features"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Grams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasImageFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasImageFeatures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNegativeEmoticons -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNegativeEmoticons">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPositiveEmoticons -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPositiveEmoticons">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostingTime -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSentences -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSentences">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Patient"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualFeatures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTreated -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTreated">
+        <rdfs:domain rdf:resource="http://schema.org/Physician"/>
+        <rdfs:range rdf:resource="http://schema.org/Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTrigrams -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTrigrams">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Trigrams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="https://schema.org/Unigrams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasVideoFeatures -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasVideoFeatures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="https://schema.org/Bigrams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSecondPersonPronoun -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSecondPersonPronoun">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isThirdPersonPronoun -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isThirdPersonPronoun">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="https://schema.org/Trigrams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf"/>
+        <rdfs:domain rdf:resource="https://schema.org/Unigrams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isVerb -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isVerb">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#colemanLiauIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#colemanLiauIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschKincaidGrade -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschKincaidGrade">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschReadingEase -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschReadingEase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gunningFogIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gunningFogIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasArousal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasArousal">
+        <rdfs:domain rdf:resource="https://schema.org/Affective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent">
+        <rdfs:domain rdf:resource="https://schema.org/Grams"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasDominance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasDominance">
+        <rdfs:domain rdf:resource="https://schema.org/Affective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise">
+        <rdfs:domain rdf:resource="http://schema.org/Physician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic"/>
+                    <rdf:Description rdf:about="https://schema.org/Grams"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasInsomaniaIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasInsomaniaIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMaximumLettersPerWord -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMaximumLettersPerWord">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMinimumLettersPerWord -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMinimumLettersPerWord">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativePhrases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativePhrases">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeSentences -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeSentences">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveSentences -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveSentences">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfRepetitiveWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfRepetitiveWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfUniqueWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfUniqueWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfWordsWithCapitalizedFirstLetter -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfWordsWithCapitalizedFirstLetter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID">
+        <rdfs:domain rdf:resource="http://schema.org/Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfFirstCapitalWordsToTotalWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfFirstCapitalWordsToTotalWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfPositiveWordsToNegativeWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfPositiveWordsToNegativeWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfUniqueWordsToTotalWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfUniqueWordsToTotalWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistration">
+        <rdfs:domain rdf:resource="http://schema.org/Physician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistrationID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistrationID">
+        <rdfs:domain rdf:resource="http://schema.org/Physician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasValence -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasValence">
+        <rdfs:domain rdf:resource="https://schema.org/Affective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#linearWriteFormula -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#linearWriteFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfDifficultWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfDifficultWords">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <rdfs:comment>A user account ID assigned to a person on any social platform.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <rdfs:comment>A unique post ID assigned to post by a person on particular social platform. Same post has different post ID on different platforms.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220 -->
+
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220">
+        <previousLabel>Sensor</previousLabel>
+        <rdfs:comment>A superclass of all the sensors from which  data can be employed for depression analysis.</rdfs:comment>
+        <rdfs:label>SensorData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876 -->
+
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+        <rdfs:label>Symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000009 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000009">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+        <rdfs:label>Anger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000028 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000028">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+        <rdfs:label>Anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000056 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000056">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+        <rdfs:label>Sadness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cpr/clinical-finding -->
+
+
+    <owl:Class rdf:about="http://purl.org/cpr/clinical-finding">
+        <previousLabel>clinical-finding</previousLabel>
+        <rdfs:comment>It is associated with the case treatment diary, physician and laboratory observations etc.</rdfs:comment>
+        <rdfs:label>ClinicalRecord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/linguistics/gold/Features -->
+
+
+    <owl:Class rdf:about="http://purl.org/linguistics/gold/Features">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/linguistics/gold/Phrases -->
+
+
+    <owl:Class rdf:about="http://purl.org/linguistics/gold/Phrases">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Grams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#TypeOfPost -->
+
+
+    <owl:Class rdf:about="http://rdfs.org/sioc/ns#TypeOfPost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Patient -->
+
+
+    <owl:Class rdf:about="http://schema.org/Patient">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="http://schema.org/Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Physician -->
+
+
+    <owl:Class rdf:about="http://schema.org/Physician">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns -->
+
+
+    <owl:Class rdf:about="http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Diagnosis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disgust -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disgust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Excercise -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Excercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson">
+        <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Happiness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Happiness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linguistics/gold/Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson">
+        <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Grams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Shame -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Shame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Suicide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Suicide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Surprise -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Surprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Swear -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Swear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linguistics/gold/Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson">
+        <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linguistics/gold/Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Emoticons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Emoticons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:disjointWith rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/topic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+        <rdfs:label>Topics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Affective -->
+
+
+    <owl:Class rdf:about="https://schema.org/Affective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linguistics/gold/Features"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Bigrams -->
+
+
+    <owl:Class rdf:about="https://schema.org/Bigrams">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Grams"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Emoticons -->
+
+
+    <owl:Class rdf:about="https://schema.org/Emoticons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Grams -->
+
+
+    <owl:Class rdf:about="https://schema.org/Grams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/SomaticSymptoms -->
+
+
+    <owl:Class rdf:about="https://schema.org/SomaticSymptoms">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Trigrams -->
+
+
+    <owl:Class rdf:about="https://schema.org/Trigrams">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Grams"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Unigrams -->
+
+
+    <owl:Class rdf:about="https://schema.org/Unigrams">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Grams"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/timebank#MentalDisorder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/timebank#MentalDisorder"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adjective -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adjective">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adverb -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adverb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#alarm -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#alarm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder">
+        <rdf:type rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#audio_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#audio_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>want cut</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>tried getting</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>not working</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>moving away</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>roller-coster</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>not working</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+        <hasContent>few days</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001"/>
+        <hasFollowees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFollowees>
+        <hasFollowers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasFollowers>
+        <hasNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasNumberOfPosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasPhrases rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001"/>
+        <hasPhrases rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002"/>
+        <hasPhrases rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001"/>
+        <hasReadabilityScore rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010"/>
+        <hasTopics rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine"/>
+        <hasTopics rdf:resource="https://schema.org/digestive_problem"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002"/>
+        <hasText>Since many months I have not taken a break.</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-18T12:00:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blue_devils -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blue_devils">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blues -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#citalopram -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#citalopram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#comment -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#comment">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#community_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#community_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group">
+        <rdf:type rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#coster -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#coster">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#death -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#death">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dejection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dejection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#demise -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#demise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder">
+        <rdf:type rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#doubt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#doubt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dread -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dread">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dying -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#escitalopram -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#escitalopram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001"/>
+        <hasFriends rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFriends>
+        <hasLikedNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasLikedNumberOfPosts>
+        <hasNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasNumberOfPosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001"/>
+        <hasFollowees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasFollowees>
+        <hasFollowers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasFollowers>
+        <hasFriends rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasFriends>
+        <hasNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasNumberOfPosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001"/>
+        <hasFollowees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</hasFollowees>
+        <hasFollowers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</hasFollowers>
+        <hasFriends rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</hasFriends>
+        <hasNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</hasNumberOfPosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasTopics rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine"/>
+        <hasTopics rdf:resource="https://schema.org/feeling_of_tired"/>
+        <hasText>hey buddy whats going on ?</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-23T01:15:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasReadabilityScore rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002"/>
+        <hasText>Hello friends, I going for a holiday today.</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-10T11:30:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasBigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001"/>
+        <hasBigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002"/>
+        <hasReadabilityScore rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001"/>
+        <hasText>Not working for some days!</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-01T00:15:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#few_days -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#few_days">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_plural -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_plural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluvoxamine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluvoxamine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#forwarded_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#forwarded_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fury -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fury">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#future_tense_verb -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#future_tense_verb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#give_advice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#give_advice">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#holiday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#holiday">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#horror -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#horror">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#i -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#i">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <isFirstPersonPronoun rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#image_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#image_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indecision -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indecision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indignation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indignation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ire -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ire">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#kill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#kill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killed -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killing -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#link_url_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#link_url_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#melancholia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#melancholia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasNumberOfStopWords rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNumberOfStopWords>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasNumberOfNegativeWords rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNumberOfNegativeWords>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <numberOfLettersOrWords rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</numberOfLettersOrWords>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasAverageLettersPerWord rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasAverageLettersPerWord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasAverageLettersPerWord rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasAverageLettersPerWord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <hasNumberOfQuestionMarks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNumberOfQuestionMarks>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <hasNumberOfQuestionMarks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNumberOfQuestionMarks>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <hasNumberOfPositivePhrases rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNumberOfPositivePhrases>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations"/>
+        <hasNumberOfExclamationMarks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNumberOfExclamationMarks>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences"/>
+        <hasNumberOfPositivePhrases rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNumberOfPositivePhrases>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasAverageWordsPerSentence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAverageWordsPerSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasAverageWordsPerSentence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAverageWordsPerSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords"/>
+        <hasAverageWordsPerSentence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasAverageWordsPerSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#months -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#months">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourn -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourning -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#moving_away -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#moving_away">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murder -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murdered -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murdered">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#nervousness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#nervousness">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#non_odd_hour_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#non_odd_hour_post">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#not_working -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#not_working">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#noun -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#noun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#obsessive_complusive_disorder -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#obsessive_complusive_disorder">
+        <rdf:type rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#odd_hour_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#odd_hour_post">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#panic -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#panic">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passed_away -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passed_away">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passing_away -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passing_away">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#past_tense_verb -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#past_tense_verb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001">
+        <rdf:type rdf:resource="http://schema.org/Patient"/>
+        <being:hasMentalDisorder rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder"/>
+        <hasSocialMediaAccount rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001"/>
+        <hasSymptoms rdf:resource="https://schema.org/sleeping_disturbance"/>
+        <hasSymptoms rdf:resource="https://schema.org/social_withdrawal"/>
+        <hasName>ABC_001</hasName>
+        <hasPatientID>patient_ID_001</hasPatientID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_002">
+        <rdf:type rdf:resource="http://schema.org/Patient"/>
+        <being:hasMentalDisorder rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder"/>
+        <hasRelationWith rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001"/>
+        <hasSocialMediaAccount rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002"/>
+        <hasSocialMediaAccount rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002"/>
+        <hasSymptoms rdf:resource="https://schema.org/pain"/>
+        <hasSymptoms rdf:resource="https://schema.org/sad"/>
+        <hasName>ABC_002</hasName>
+        <hasPatientID>patient_ID_002</hasPatientID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_003">
+        <rdf:type rdf:resource="http://schema.org/Patient"/>
+        <being:hasMentalDisorder rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder"/>
+        <hasSocialMediaAccount rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003"/>
+        <hasSymptoms rdf:resource="https://schema.org/loss_of_appetite"/>
+        <hasSymptoms rdf:resource="https://schema.org/loss_of_energy"/>
+        <hasSymptoms rdf:resource="https://schema.org/not_able_to_sleep"/>
+        <hasName>ABC_003</hasName>
+        <hasPatientID>patient_ID_003</hasPatientID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#person_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#person_001">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <being:hasMentalDisorder rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group"/>
+        <hasSocialMediaAccount rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001"/>
+        <hasName>control_001</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+        <hasContent>since few days</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#post_traumatic_stress_disorder -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#post_traumatic_stress_disorder">
+        <rdf:type rdf:resource="https://w3id.org/timebank#MentalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#pre_determiner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#pre_determiner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#present_tense_verb -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#present_tense_verb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#question_centric_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#question_centric_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <automatedReadabilityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</automatedReadabilityIndex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <gobbledygookIndexRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</gobbledygookIndexRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <daleChallReadability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</daleChallReadability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore"/>
+        <schoolGradeToUnderstandText rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</schoolGradeToUnderstandText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#rage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#rage">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002"/>
+        <hasSocialPost rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003"/>
+        <hasLikedNumberOfPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasLikedNumberOfPosts>
+        <isACommunityMemberOf>Suicide-Watch</isACommunityMemberOf>
+        <isACommunityMemberOf>depression-community</isACommunityMemberOf>
+        <numberOfcommunitiesJoined rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</numberOfcommunitiesJoined>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasBigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001"/>
+        <hasReadabilityScore rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002"/>
+        <hasText>Life has become roller coster.</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-21T03:25:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasBigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001"/>
+        <hasBigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002"/>
+        <hasPhrases rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001"/>
+        <hasUnigrams rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002"/>
+        <hasText>I am not working since few days?</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-20T04:15:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost"/>
+        <hasTextualPostMetaData rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013"/>
+        <hasText>This post is added to check average of number of words per post.</hasText>
+        <postedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-28T10:13:00</postedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restless -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restless">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restlessness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restlessness">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller_coster -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller_coster">
+        <rdf:type rdf:resource="https://schema.org/Bigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_plural -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_plural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_singular -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_singular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#self_pity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#self_pity">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000056"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since_few_days -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since_few_days">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_plural -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_plural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_singular -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_singular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#timeline_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#timeline_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#tried_getting -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#tried_getting">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>since</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>months</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>i</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>holiday</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>working</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>coster</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>roller</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>since</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+        <hasContent>working</hasContent>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertainty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertainty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uneasiness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uneasiness">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#video_post -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#video_post">
+        <rdf:type rdf:resource="http://rdfs.org/sioc/ns#TypeOfPost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#want_cut -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#want_cut">
+        <rdf:type rdf:resource="http://purl.org/linguistics/gold/Phrases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#working -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#working">
+        <rdf:type rdf:resource="https://schema.org/Unigrams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#wrath -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#wrath">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/ache -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/ache">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/cramp"/>
+        <owl:sameAs rdf:resource="https://schema.org/headache"/>
+        <owl:sameAs rdf:resource="https://schema.org/pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/cramp -->
+
+
+    <rdf:Description rdf:about="https://schema.org/cramp"/>
+    
+
+
+    <!-- https://schema.org/headache -->
+
+
+    <rdf:Description rdf:about="https://schema.org/headache"/>
+    
+
+
+    <!-- https://schema.org/pain -->
+
+
+    <rdf:Description rdf:about="https://schema.org/pain"/>
+    
+
+
+    <!-- https://schema.org/anxiety -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/anxiety">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/anxious"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/anxious -->
+
+
+    <rdf:Description rdf:about="https://schema.org/anxious"/>
+    
+
+
+    <!-- https://schema.org/anxious -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/anxious">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/appetite_loss -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/appetite_loss">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/loss_of_appetite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/loss_of_appetite -->
+
+
+    <rdf:Description rdf:about="https://schema.org/loss_of_appetite"/>
+    
+
+
+    <!-- https://schema.org/ashamed -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/ashamed">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/shame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/shame -->
+
+
+    <rdf:Description rdf:about="https://schema.org/shame"/>
+    
+
+
+    <!-- https://schema.org/change_in_eating_habit -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/change_in_eating_habit">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/eating_problem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/eating_problem -->
+
+
+    <rdf:Description rdf:about="https://schema.org/eating_problem"/>
+    
+
+
+    <!-- https://schema.org/change_in_sleeping_habit -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/change_in_sleeping_habit">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_problem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_problem -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_problem"/>
+    
+
+
+    <!-- https://schema.org/concentration_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/concentration_problem">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/cramp -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/cramp">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/cramps"/>
+        <owl:sameAs rdf:resource="https://schema.org/pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/cramps -->
+
+
+    <rdf:Description rdf:about="https://schema.org/cramps"/>
+    
+
+
+    <!-- https://schema.org/pain -->
+
+
+    <rdf:Description rdf:about="https://schema.org/pain"/>
+    
+
+
+    <!-- https://schema.org/cramps -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/cramps">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/headache -->
+
+
+    <rdf:Description rdf:about="https://schema.org/headache"/>
+    
+
+
+    <!-- https://schema.org/despair -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/despair">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/digestive_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/digestive_problem">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic"/>
+                    <rdf:Description rdf:about="https://schema.org/SomaticSymptoms"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <owl:sameAs rdf:resource="https://schema.org/eating_disturbance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/eating_disturbance -->
+
+
+    <rdf:Description rdf:about="https://schema.org/eating_disturbance"/>
+    
+
+
+    <!-- https://schema.org/diminished_interest -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/diminished_interest">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/diminished_pleasure"/>
+        <owl:sameAs rdf:resource="https://schema.org/loss_of_pleasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/diminished_pleasure -->
+
+
+    <rdf:Description rdf:about="https://schema.org/diminished_pleasure"/>
+    
+
+
+    <!-- https://schema.org/loss_of_pleasure -->
+
+
+    <rdf:Description rdf:about="https://schema.org/loss_of_pleasure"/>
+    
+
+
+    <!-- https://schema.org/diminished_pleasure -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/diminished_pleasure">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/loss_of_pleasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/loss_of_pleasure -->
+
+
+    <rdf:Description rdf:about="https://schema.org/loss_of_pleasure"/>
+    
+
+
+    <!-- https://schema.org/discouragement -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/discouragement">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/eating_disturbance -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/eating_disturbance">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/eating_problem"/>
+        <owl:sameAs rdf:resource="https://schema.org/excessive_eating"/>
+        <owl:sameAs rdf:resource="https://schema.org/over_eating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/eating_problem -->
+
+
+    <rdf:Description rdf:about="https://schema.org/eating_problem"/>
+    
+
+
+    <!-- https://schema.org/excessive_eating -->
+
+
+    <rdf:Description rdf:about="https://schema.org/excessive_eating"/>
+    
+
+
+    <!-- https://schema.org/over_eating -->
+
+
+    <rdf:Description rdf:about="https://schema.org/over_eating"/>
+    
+
+
+    <!-- https://schema.org/eating_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/eating_problem">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/empty -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/empty">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/excessive_eating -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/excessive_eating">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/over_eating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/over_eating -->
+
+
+    <rdf:Description rdf:about="https://schema.org/over_eating"/>
+    
+
+
+    <!-- https://schema.org/excessive_sleeping -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/excessive_sleeping">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/over_sleeping"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_disturbance"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_too_much"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/over_sleeping -->
+
+
+    <rdf:Description rdf:about="https://schema.org/over_sleeping"/>
+    
+
+
+    <!-- https://schema.org/sleeping_disturbance -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_disturbance"/>
+    
+
+
+    <!-- https://schema.org/sleeping_too_much -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_too_much"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_grief -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_grief">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/feeling_of_hopelessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_hopelessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/helplessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/helplessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/helplessness"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_sadness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_sadness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sadness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sadness"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_tired -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_tired">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <owl:sameAs rdf:resource="https://schema.org/loss_of_energy"/>
+        <owl:sameAs rdf:resource="https://schema.org/reduced_energy"/>
+        <owl:sameAs rdf:resource="https://schema.org/tire"/>
+        <owl:sameAs rdf:resource="https://schema.org/tired"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/loss_of_energy -->
+
+
+    <rdf:Description rdf:about="https://schema.org/loss_of_energy"/>
+    
+
+
+    <!-- https://schema.org/reduced_energy -->
+
+
+    <rdf:Description rdf:about="https://schema.org/reduced_energy"/>
+    
+
+
+    <!-- https://schema.org/tire -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tire"/>
+    
+
+
+    <!-- https://schema.org/tired -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tired"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_unhappiness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_unhappiness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/sad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sad -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sad"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_worry -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_worry">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/worry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/worry -->
+
+
+    <rdf:Description rdf:about="https://schema.org/worry"/>
+    
+
+
+    <!-- https://schema.org/feeling_of_worthlessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/feeling_of_worthlessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/worthlessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/worthlessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/worthlessness"/>
+    
+
+
+    <!-- https://schema.org/guilty -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/guilty">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/headache -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/headache">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/pain -->
+
+
+    <rdf:Description rdf:about="https://schema.org/pain"/>
+    
+
+
+    <!-- https://schema.org/helpless -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/helpless">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/helplessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/helplessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/helplessness"/>
+    
+
+
+    <!-- https://schema.org/helplessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/helplessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/hopeless -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hopeless">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/hopelessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/hopelessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/hopelessness"/>
+    
+
+
+    <!-- https://schema.org/hopelessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hopelessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/insomania -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/insomania">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_disturbance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_disturbance -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_disturbance"/>
+    
+
+
+    <!-- https://schema.org/irritable -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/irritable">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/loss_of_appetite -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/loss_of_appetite">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/loss_of_energy -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/loss_of_energy">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/reduced_energy"/>
+        <owl:sameAs rdf:resource="https://schema.org/tire"/>
+        <owl:sameAs rdf:resource="https://schema.org/tired"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/reduced_energy -->
+
+
+    <rdf:Description rdf:about="https://schema.org/reduced_energy"/>
+    
+
+
+    <!-- https://schema.org/tire -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tire"/>
+    
+
+
+    <!-- https://schema.org/tired -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tired"/>
+    
+
+
+    <!-- https://schema.org/loss_of_pleasure -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/loss_of_pleasure">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/low_mood -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/low_mood">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/low_self_esteem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/low_self_esteem">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/memory_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/memory_problem">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/not_able_to_sleep -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/not_able_to_sleep">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_disturbance"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_problem"/>
+        <owl:sameAs rdf:resource="https://schema.org/unable_to_sleep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_disturbance -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_disturbance"/>
+    
+
+
+    <!-- https://schema.org/sleeping_problem -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_problem"/>
+    
+
+
+    <!-- https://schema.org/unable_to_sleep -->
+
+
+    <rdf:Description rdf:about="https://schema.org/unable_to_sleep"/>
+    
+
+
+    <!-- https://schema.org/over_eating -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/over_eating">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/over_sleeping -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/over_sleeping">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_disturbance"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_too_much"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_disturbance -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_disturbance"/>
+    
+
+
+    <!-- https://schema.org/sleeping_too_much -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_too_much"/>
+    
+
+
+    <!-- https://schema.org/pain -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/pain">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/reduced_energy -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/reduced_energy">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/tire"/>
+        <owl:sameAs rdf:resource="https://schema.org/tired"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/tire -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tire"/>
+    
+
+
+    <!-- https://schema.org/tired -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tired"/>
+    
+
+
+    <!-- https://schema.org/remembering_details_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/remembering_details_problem">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/restless -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/restless">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/restlessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/restlessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/restlessness"/>
+    
+
+
+    <!-- https://schema.org/restlessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/restlessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sad -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sad">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sadness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sadness"/>
+    
+
+
+    <!-- https://schema.org/sadness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sadness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/shame -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/shame">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_disturbance -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sleeping_disturbance">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_problem"/>
+        <owl:sameAs rdf:resource="https://schema.org/unable_to_sleep"/>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFrequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_problem -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_problem"/>
+    
+
+
+    <!-- https://schema.org/unable_to_sleep -->
+
+
+    <rdf:Description rdf:about="https://schema.org/unable_to_sleep"/>
+    
+
+
+    <!-- https://schema.org/sleeping_problem -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sleeping_problem">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+        <owl:sameAs rdf:resource="https://schema.org/sleeping_too_much"/>
+        <owl:sameAs rdf:resource="https://schema.org/unable_to_sleep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/sleeping_too_much -->
+
+
+    <rdf:Description rdf:about="https://schema.org/sleeping_too_much"/>
+    
+
+
+    <!-- https://schema.org/unable_to_sleep -->
+
+
+    <rdf:Description rdf:about="https://schema.org/unable_to_sleep"/>
+    
+
+
+    <!-- https://schema.org/sleeping_too_much -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sleeping_too_much">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/social_withdraw -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/social_withdraw">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/social_withdrawal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/social_withdrawal -->
+
+
+    <rdf:Description rdf:about="https://schema.org/social_withdrawal"/>
+    
+
+
+    <!-- https://schema.org/social_withdrawal -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/social_withdrawal">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/the_blue -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/the_blue">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/the_blues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/the_blues -->
+
+
+    <rdf:Description rdf:about="https://schema.org/the_blues"/>
+    
+
+
+    <!-- https://schema.org/the_blues -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/the_blues">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/thought_of_death -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/thought_of_death">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/thought_of_suicide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/thought_of_suicide -->
+
+
+    <rdf:Description rdf:about="https://schema.org/thought_of_suicide"/>
+    
+
+
+    <!-- https://schema.org/thought_of_suicide -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/thought_of_suicide">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/tire -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/tire">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/tired"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/tired -->
+
+
+    <rdf:Description rdf:about="https://schema.org/tired"/>
+    
+
+
+    <!-- https://schema.org/tired -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/tired">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/unable_to_sleep -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/unable_to_sleep">
+        <rdf:type rdf:resource="https://schema.org/SomaticSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/worry -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/worry">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/worthless -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/worthless">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+        <owl:sameAs rdf:resource="https://schema.org/worthlessness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/worthlessness -->
+
+
+    <rdf:Description rdf:about="https://schema.org/worthlessness"/>
+    
+
+
+    <!-- https://schema.org/worthlessness -->
+
+
+    <owl:NamedIndividual rdf:about="https://schema.org/worthlessness">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <hasExpertise></hasExpertise>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

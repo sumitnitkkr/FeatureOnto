@@ -1,0 +1,4563 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/cpr", "http://schema.org", "http://purl.obolibrary.org/obo", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2001/XMLSchema", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl", "http://www.lexinfo.net/ontology/2.0/lexinfo", "http://purl.org/linguistics/gold", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://contextus.net/ontology/ontomedia/ext/common/being", "http://xmlns.com/foaf/0.1", "http://rdfs.org/sioc/ns", "https://w3id.org/timebank", "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12" ],
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "204",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "183",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "245",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "248",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "258",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://schema.org/Trigrams",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trigrams"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000028",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000028",
+      "undefined" : "Anxiety"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restlessness",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "restlessness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dread",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "dread"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#nervousness",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "nervousness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#restless",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "restless"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#alarm",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "alarm"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uneasiness",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "uneasiness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#panic",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "panic"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disease",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disease"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dejection",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "dejection"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blue_devils",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "blue_devils"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#melancholia",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "melancholia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blues",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "blues"
+      }
+    } ],
+    "id" : "77",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://schema.org/Affective",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Affective"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://purl.org/linguistics/gold/Phrases",
+    "baseIri" : "http://purl.org/linguistics/gold",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phrases"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ph_r002_002_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "ph_r002_002_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#moving_away",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "moving_away"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#give_advice",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "give_advice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since_few_days",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "since_few_days"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#tried_getting",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "tried_getting"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#want_cut",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "want_cut"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Death",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Death"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#death",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "death"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#dying",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "dying"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passed_away",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "passed_away"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murdered",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "murdered"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#murder",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "murder"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourning",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "mourning"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#mourn",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "mourn"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#passing_away",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "passing_away"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#kill",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "kill"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#demise",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "demise"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killed",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "killed"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#killing",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "killing"
+      }
+    } ],
+    "id" : "67",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ImageFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageFeatures"
+    },
+    "id" : "97",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Antidepressants",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Antidepressants"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluvoxamine",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "fluvoxamine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#escitalopram",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "escitalopram"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#citalopram",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "citalopram"
+      }
+    } ],
+    "id" : "107",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://schema.org/Grams",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grams"
+    },
+    "subClasses" : [ "79", "47", "108", "16", "101" ],
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialPost",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialPost"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "reddit_post_002_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "reddit_post_002_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_post_002_003",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "reddit_post_002_003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_post_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_post_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "blog_post_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_003_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_post_003_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_post_002_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_post_002_001"
+      }
+    } ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#DomainSpecific",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainSpecific"
+    },
+    "subClasses" : [ "107", "114", "115", "116", "117", "77", "118", "30", "83", "87", "89", "59", "61", "63", "65", "67" ],
+    "id" : "31",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextualFeatures"
+    },
+    "subClasses" : [ "17", "31", "73", "50", "53" ],
+    "id" : "54",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000056",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000056",
+      "undefined" : "Sadness"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#self_pity",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "self_pity"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C4876",
+      "undefined" : "Symptoms"
+    },
+    "individuals" : [ {
+      "iri" : "https://schema.org/helpless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "helpless"
+      }
+    }, {
+      "iri" : "https://schema.org/ashamed",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "ashamed"
+      }
+    }, {
+      "iri" : "https://schema.org/appetite_loss",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "appetite_loss"
+      }
+    }, {
+      "iri" : "https://schema.org/diminished_interest",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "diminished_interest"
+      }
+    }, {
+      "iri" : "https://schema.org/social_withdraw",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "social_withdraw"
+      }
+    }, {
+      "iri" : "https://schema.org/worthless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worthless"
+      }
+    }, {
+      "iri" : "https://schema.org/diminished_pleasure",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "diminished_pleasure"
+      }
+    }, {
+      "iri" : "https://schema.org/thought_of_death",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "thought_of_death"
+      }
+    }, {
+      "iri" : "https://schema.org/guilty",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "guilty"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_hopelessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_hopelessness"
+      }
+    }, {
+      "iri" : "https://schema.org/memory_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "memory_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/restlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "restlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/reduced_energy",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "reduced_energy"
+      }
+    }, {
+      "iri" : "https://schema.org/remembering_details_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "remembering_details_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/anxious",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "anxious"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_appetite",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_appetite"
+      }
+    }, {
+      "iri" : "https://schema.org/shame",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "shame"
+      }
+    }, {
+      "iri" : "https://schema.org/thought_of_suicide",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "thought_of_suicide"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_worthlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_worthlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/restless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "restless"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_energy",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_energy"
+      }
+    }, {
+      "iri" : "https://schema.org/low_mood",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "low_mood"
+      }
+    }, {
+      "iri" : "https://schema.org/anxiety",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "anxiety"
+      }
+    }, {
+      "iri" : "https://schema.org/irritable",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "irritable"
+      }
+    }, {
+      "iri" : "https://schema.org/sad",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sad"
+      }
+    }, {
+      "iri" : "https://schema.org/sadness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sadness"
+      }
+    }, {
+      "iri" : "https://schema.org/ache",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "ache"
+      }
+    }, {
+      "iri" : "https://schema.org/discouragement",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "discouragement"
+      }
+    }, {
+      "iri" : "https://schema.org/worry",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worry"
+      }
+    }, {
+      "iri" : "https://schema.org/pain",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "pain"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_worry",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_worry"
+      }
+    }, {
+      "iri" : "https://schema.org/hopeless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "hopeless"
+      }
+    }, {
+      "iri" : "https://schema.org/the_blue",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "the_blue"
+      }
+    }, {
+      "iri" : "https://schema.org/social_withdrawal",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "social_withdrawal"
+      }
+    }, {
+      "iri" : "https://schema.org/despair",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "despair"
+      }
+    }, {
+      "iri" : "https://schema.org/hopelessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "hopelessness"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_grief",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_grief"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_pleasure",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_pleasure"
+      }
+    }, {
+      "iri" : "https://schema.org/worthlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worthlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/concentration_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "concentration_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/low_self_esteem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "low_self_esteem"
+      }
+    }, {
+      "iri" : "https://schema.org/headache",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "headache"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_sadness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_sadness"
+      }
+    }, {
+      "iri" : "https://schema.org/cramps",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "cramps"
+      }
+    }, {
+      "iri" : "https://schema.org/cramp",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "cramp"
+      }
+    }, {
+      "iri" : "https://schema.org/helplessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "helplessness"
+      }
+    }, {
+      "iri" : "https://schema.org/tire",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "tire"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_unhappiness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_unhappiness"
+      }
+    }, {
+      "iri" : "https://schema.org/tired",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "tired"
+      }
+    }, {
+      "iri" : "https://schema.org/the_blues",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "the_blues"
+      }
+    }, {
+      "iri" : "https://schema.org/empty",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "empty"
+      }
+    } ],
+    "subClasses" : [ "56" ],
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://schema.org/Physician",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Physician"
+    },
+    "attributes" : [ "external" ],
+    "id" : "131",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Diagnosis",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diagnosis"
+    },
+    "id" : "89",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#FirstPerson",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstPerson"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_singular",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "first_person_singular"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#first_person_plural",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "first_person_plural"
+      }
+    } ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronouns",
+    "baseIri" : "http://www.lexinfo.net/ontology/2.0/lexinfo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pronouns"
+    },
+    "subClasses" : [ "1", "4", "6" ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "topic",
+      "undefined" : "Topics"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fluoxetine",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "fluoxetine"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://w3id.org/timebank#MentalDisorder",
+    "baseIri" : "https://w3id.org/timebank",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MentalDisorder"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#control_group",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "control_group"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#obsessive_complusive_disorder",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "obsessive_complusive_disorder"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#anxiety_disorder",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "anxiety_disorder"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#post_traumatic_stress_disorder",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "post_traumatic_stress_disorder"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#depression_disorder",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "depression_disorder"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#VideoFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VideoFeatures"
+    },
+    "id" : "140",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Reddit",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reddit"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#reddit_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "reddit_002"
+      }
+    } ],
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://schema.org/Patient",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "patient_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "patient_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#patient_003",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "patient_003"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Disgust",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disgust"
+    },
+    "id" : "117",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Shame",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shame"
+    },
+    "id" : "83",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#negative_emoticons",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "negative_emoticons"
+    },
+    "id" : "106",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#positive_emoticons",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "positive_emoticons"
+    },
+    "id" : "94",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Confusion",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Confusion"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertain",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "uncertain"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indecision",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "indecision"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#uncertainty",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "uncertainty"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#doubt",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "doubt"
+      }
+    } ],
+    "id" : "116",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Verbs",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verbs"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#present_tense_verb",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "present_tense_verb"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#future_tense_verb",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "future_tense_verb"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#past_tense_verb",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "past_tense_verb"
+      }
+    } ],
+    "id" : "173",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Happiness",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Happiness"
+    },
+    "id" : "118",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Excercise",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Excercise"
+    },
+    "id" : "87",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "197",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Swear",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Swear"
+    },
+    "id" : "63",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "200",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "57" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Blog",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Blog"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#blog_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "blog_001"
+      }
+    } ],
+    "id" : "19",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "13" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28220",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "previousLabel" : [ {
+        "identifier" : "previousLabel",
+        "language" : "undefined",
+        "value" : "Sensor",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C28220",
+      "undefined" : "SensorData"
+    },
+    "comment" : {
+      "undefined" : "A superclass of all the sensors from which  data can be employed for depression analysis."
+    },
+    "attributes" : [ "external" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SocialMediaAccount",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialMediaAccount"
+    },
+    "subClasses" : [ "12", "15", "19", "21" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/cpr/clinical-finding",
+    "baseIri" : "http://purl.org/cpr",
+    "instances" : 0,
+    "annotations" : {
+      "previousLabel" : [ {
+        "identifier" : "previousLabel",
+        "language" : "undefined",
+        "value" : "clinical-finding",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "clinical-finding",
+      "undefined" : "ClinicalRecord"
+    },
+    "comment" : {
+      "undefined" : "It is associated with the case treatment diary, physician and laboratory observations etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#person_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "person_001"
+      }
+    } ],
+    "subClasses" : [ "23", "131" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "214",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://rdfs.org/sioc/ns#TypeOfPost",
+    "baseIri" : "http://rdfs.org/sioc/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeOfPost"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#video_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "video_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#link_url_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "link_url_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#comment",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "comment"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#community_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "community_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#question_centric_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "question_centric_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#forwarded_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "forwarded_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#timeline_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "timeline_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#audio_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "audio_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#image_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "image_post"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "163",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Suicide",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Suicide"
+    },
+    "id" : "114",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#UserBehavior",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserBehavior"
+    },
+    "subClasses" : [ "191", "146", "163" ],
+    "id" : "110",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "220",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "184",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "15", "21" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Facebook",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facebook"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_003",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#facebook_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "facebook_001"
+      }
+    } ],
+    "id" : "21",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "242",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Fear",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fear"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#horror",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "horror"
+      }
+    } ],
+    "id" : "115",
+    "superClasses" : [ "31" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "21" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://purl.org/linguistics/gold/Features",
+    "baseIri" : "http://purl.org/linguistics/gold",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Features"
+    },
+    "subClasses" : [ "33", "54", "35", "110" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "241",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "247",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "73", "57" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "249",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "250",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ReadabilityScore",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReadabilityScore"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r1",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "r1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r2",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "r2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r3",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "r3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#r4",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "r4"
+      }
+    } ],
+    "id" : "50",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "252",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "212",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "253",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ThirdPerson",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThirdPerson"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_plural",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "third_person_plural"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#third_person_singular",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "third_person_singular"
+      }
+    } ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PostingTime",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostingTime"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#odd_hour_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "odd_hour_post"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#non_odd_hour_post",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "non_odd_hour_post"
+      }
+    } ],
+    "id" : "191",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://schema.org/Unigrams",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unigrams"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "roller"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#since",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "since"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_r002_001_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_f002_001_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#coster",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "coster"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_r002_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f003_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_f003_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_r002_002_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#months",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "months"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#holiday",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "holiday"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_r002_002_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_r002_002_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#i",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "i"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#working",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "working"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_b001_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_b001_001_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_b001_001_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#u_f002_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "u_f002_001_001"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "256",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#SecondPerson",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondPerson"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_plural",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "second_person_plural"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#second_person_singular",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "second_person_singular"
+      }
+    } ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "21" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "258"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "255",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "259",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPhrasesSentences",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CountPhrasesSentences"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_008",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_008"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_010",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_010"
+      }
+    } ],
+    "id" : "129",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "https://schema.org/SomaticSymptoms",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SomaticSymptoms"
+    },
+    "individuals" : [ {
+      "iri" : "https://schema.org/insomania",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "insomania"
+      }
+    }, {
+      "iri" : "https://schema.org/excessive_sleeping",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "excessive_sleeping"
+      }
+    }, {
+      "iri" : "https://schema.org/eating_disturbance",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "eating_disturbance"
+      }
+    }, {
+      "iri" : "https://schema.org/excessive_eating",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "excessive_eating"
+      }
+    }, {
+      "iri" : "https://schema.org/not_able_to_sleep",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "not_able_to_sleep"
+      }
+    }, {
+      "iri" : "https://schema.org/change_in_sleeping_habit",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "change_in_sleeping_habit"
+      }
+    }, {
+      "iri" : "https://schema.org/over_sleeping",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "over_sleeping"
+      }
+    }, {
+      "iri" : "https://schema.org/unable_to_sleep",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "unable_to_sleep"
+      }
+    }, {
+      "iri" : "https://schema.org/over_eating",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "over_eating"
+      }
+    }, {
+      "iri" : "https://schema.org/change_in_eating_habit",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "change_in_eating_habit"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_too_much",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_too_much"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_disturbance",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_disturbance"
+      }
+    }, {
+      "iri" : "https://schema.org/eating_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "eating_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_problem"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#AudioFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioFeatures"
+    },
+    "id" : "9",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://schema.org/Bigrams",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bigrams"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_f003_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#roller_coster",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "roller_coster"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#few_days",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "few_days"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_b001_001_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_f003_001_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_f003_001_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#not_working",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "not_working"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_r002_002_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_r002_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_b001_001_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_b001_001_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#b_r002_002_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "b_r002_002_001"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "231",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountPunctuations",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CountPunctuations"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_007",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_007"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_006",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_006"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_009",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_009"
+      }
+    } ],
+    "id" : "120",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#CountLetttersWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CountLetttersWords"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_005",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_011",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_011"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_003",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_004",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_004"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_012",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_012"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_001",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_002",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#meta_013",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "meta_013"
+      }
+    } ],
+    "id" : "91",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Surprise",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Surprise"
+    },
+    "id" : "59",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000009",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000009",
+      "undefined" : "Anger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fury",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "fury"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#wrath",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "wrath"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#indignation",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "indignation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#ire",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "ire"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#rage",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "rage"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#PartOfSpeech",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PartOfSpeech"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adverb",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "adverb"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#noun",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "noun"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#pre_determiner",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "pre_determiner"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#adjective",
+      "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "adjective"
+      }
+    } ],
+    "subClasses" : [ "173", "2" ],
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://schema.org/Emoticons",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Emoticons"
+    },
+    "subClasses" : [ "94", "106" ],
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#TextualPostMetaData",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextualPostMetaData"
+    },
+    "subClasses" : [ "120", "129", "91" ],
+    "id" : "146",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Twitter",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Twitter"
+    },
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#Sentences",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentences"
+    },
+    "id" : "108",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "40",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "21" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#MultimediaFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultimediaFeatures"
+    },
+    "subClasses" : [ "149", "140", "97", "9" ],
+    "id" : "35",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "294",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "236",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "246",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "254",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "260",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "261",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "262",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "263",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "264",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "265",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "293",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "295",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "296",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "297",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAudioFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasAudioFeatures"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "13",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "13",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfcommunitiesJoined",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "numberOfcommunitiesJoined"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPatientID",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasPatientID"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasValence",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasValence"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMultimediaFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasMultimediaFeatures"
+    },
+    "domain" : "8",
+    "subproperty" : [ "36", "7", "37", "38" ],
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "40",
+    "subproperty" : [ "41", "42", "43" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasContent",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasContent"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isUnigramOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isUnigramOf"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gobbledygookIndexRating",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "gobbledygookIndexRating"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "31",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "31",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "31",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "31",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "31",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "54",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#linearWriteFormula",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "linearWriteFormula"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "range" : "54",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "54",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "54",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasName",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasInsomaniaIndex",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasInsomaniaIndex"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "range" : "31",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSecondPersonPronoun",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isSecondPersonPronoun"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "31",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "31",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMinimumLettersPerWord",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasMinimumLettersPerWord"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPositiveEmoticons",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasPositiveEmoticons"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfStopWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasNumberOfStopWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfFirstCapitalWordsToTotalWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasRatioOfFirstCapitalWordsToTotalWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasBigrams",
+    "inverse" : "102",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "hasBigrams"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isPhraseOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isPhraseOf"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNegativeEmoticons",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "hasNegativeEmoticons"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#userBehavior",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "userBehavior"
+    },
+    "domain" : "8",
+    "subproperty" : [ "111", "112", "113" ],
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPunctuationMarks",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "numberOfPunctuationMarks"
+    },
+    "domain" : "120",
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSentences",
+    "inverse" : "123",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasSentences"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialPost",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "socialPost"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "A unique post ID assigned to post by a person on particular social platform. Same post has different post ID on different platforms."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativePhrases",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "hasNumberOfNegativePhrases"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowees",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasFollowees"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#socialMediaAccount",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "socialMediaAccount"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A user account ID assigned to a person on any social platform."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#schoolGradeToUnderstandText",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "schoolGradeToUnderstandText"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTrigrams",
+    "inverse" : "139",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasTrigrams"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasVideoFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "hasVideoFeatures"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschReadingEase",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "fleschReadingEase"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasDominance",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "hasDominance"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialPost",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasSocialPost"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "146",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "35",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "35",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "35",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "35",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualPostMetaData",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasTextualPostMetaData"
+    },
+    "superproperty" : [ "109" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasEmoticons",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "hasEmoticons"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "8",
+    "subproperty" : [ "93", "105" ],
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isRelativeOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "isRelativeOf"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isTrigramOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isTrigramOf"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasReadabilityScore",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasReadabilityScore"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "range" : "149",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "149",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "146",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "146",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfQuestionMarks",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "hasNumberOfQuestionMarks"
+    },
+    "domain" : "120",
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfPositiveWordsToNegativeWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "hasRatioOfPositiveWordsToNegativeWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "160"
+  }, {
+    "range" : "110",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfRepetitiveWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "hasNumberOfRepetitiveWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "164"
+  }, {
+    "range" : "78",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "78",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "78",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "170",
+    "label" : {
+      "IRI-based" : "hasExpertise"
+    },
+    "domain" : "131",
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "range" : "78",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "53",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfUniqueWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "hasNumberOfUniqueWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasArousal",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "hasArousal"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "176"
+  }, {
+    "range" : "53",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#automatedReadabilityIndex",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "180",
+    "label" : {
+      "IRI-based" : "automatedReadabilityIndex"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTreated",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasTreated"
+    },
+    "domain" : "131",
+    "attributes" : [ "object" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasLikedNumberOfPosts",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "184",
+    "label" : {
+      "IRI-based" : "hasLikedNumberOfPosts"
+    },
+    "domain" : "183",
+    "attributes" : [ "datatype" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://contextus.net/ontology/ontomedia/ext/common/being#hasMentalDisorder",
+    "baseIri" : "http://contextus.net/ontology/ontomedia/ext/common/being",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "hasMentalDisorder"
+    },
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "187",
+    "label" : {
+      "IRI-based" : "hasNumberOfNegativeWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasImageFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasImageFeatures"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasUnigrams",
+    "inverse" : "46",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasUnigrams"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "188"
+  }, {
+    "range" : "24",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "110",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "110",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPosts",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "hasNumberOfPosts"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostingTime",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "191",
+    "label" : {
+      "IRI-based" : "hasPostingTime"
+    },
+    "superproperty" : [ "109" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistrationID",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "hasRegistrationID"
+    },
+    "domain" : "131",
+    "attributes" : [ "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSocialMediaAccount",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasSocialMediaAccount"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#readabilityScore",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "readabilityScore"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "201"
+  }, {
+    "range" : "147",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveSentences",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "hasNumberOfPositiveSentences"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRelationWith",
+    "inverse" : "153",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasRelationWith"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfDifficultWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "212",
+    "label" : {
+      "IRI-based" : "numberOfDifficultWords"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositivePhrases",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "214",
+    "label" : {
+      "IRI-based" : "hasNumberOfPositivePhrases"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasSymptoms",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasSymptoms"
+    },
+    "domain" : "208",
+    "attributes" : [ "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfWordsWithCapitalizedFirstLetter",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "217",
+    "label" : {
+      "IRI-based" : "hasNumberOfWordsWithCapitalizedFirstLetter"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAffective",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasAffective"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "147",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfExclamationMarks",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "hasNumberOfExclamationMarks"
+    },
+    "domain" : "120",
+    "attributes" : [ "datatype" ],
+    "id" : "219"
+  }, {
+    "range" : "147",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "24",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "15",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "15",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "24",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "8",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "21",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "12",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfPositiveWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "231",
+    "label" : {
+      "IRI-based" : "hasNumberOfPositiveWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isFirstPersonPronoun",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isFirstPersonPronoun"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "232"
+  }, {
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isSentenceOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isSentenceOf"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "108",
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasMaximumLettersPerWord",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "235",
+    "label" : {
+      "IRI-based" : "hasMaximumLettersPerWord"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isBigramOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isBigramOf"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "101",
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasText",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "237",
+    "label" : {
+      "IRI-based" : "hasText"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "236"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#daleChallReadability",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "daleChallReadability"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "239"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFollowers",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "241",
+    "label" : {
+      "IRI-based" : "hasFollowers"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTopics",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasTopics"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasGrams",
+    "inverse" : "48",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasGrams"
+    },
+    "domain" : "8",
+    "subproperty" : [ "244", "122", "138", "188", "100" ],
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#colemanLiauIndex",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "200",
+    "label" : {
+      "IRI-based" : "colemanLiauIndex"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "246"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#belongsTo",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "204",
+    "label" : {
+      "IRI-based" : "belongsTo"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPhrases",
+    "inverse" : "104",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasPhrases"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRegistration",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "255",
+    "label" : {
+      "IRI-based" : "hasRegistration"
+    },
+    "domain" : "131",
+    "attributes" : [ "datatype" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasNumberOfNegativeSentences",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "238",
+    "label" : {
+      "IRI-based" : "hasNumberOfNegativeSentences"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "257"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isGramOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isGramOf"
+    },
+    "domain" : "17",
+    "subproperty" : [ "123", "139", "46", "102", "104" ],
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#gunningFogIndex",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "197",
+    "label" : {
+      "IRI-based" : "gunningFogIndex"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "260"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#fleschKincaidGrade",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "203",
+    "label" : {
+      "IRI-based" : "fleschKincaidGrade"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isACommunityMemberOf",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "256",
+    "label" : {
+      "IRI-based" : "isACommunityMemberOf"
+    },
+    "domain" : "258",
+    "attributes" : [ "datatype" ],
+    "id" : "262"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfPhrasesOrSentences",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "253",
+    "label" : {
+      "IRI-based" : "numberOfPhrasesOrSentences"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "263"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasTextualFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasTextualFeatures"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "264"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageLettersPerWord",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "250",
+    "label" : {
+      "IRI-based" : "hasAverageLettersPerWord"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "265"
+  }, {
+    "range" : "31",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "31",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "31",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
+  }, {
+    "range" : "31",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "range" : "31",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "31",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "31",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "13",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFrequency",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "247",
+    "label" : {
+      "IRI-based" : "hasFrequency"
+    },
+    "domain" : "248",
+    "attributes" : [ "datatype" ],
+    "id" : "274"
+  }, {
+    "range" : "147",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "24",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
+  }, {
+    "range" : "13",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "8",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "147",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "131",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#numberOfLettersOrWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "252",
+    "label" : {
+      "IRI-based" : "numberOfLettersOrWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "281"
+  }, {
+    "range" : "15",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasAverageWordsPerSentence",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "249",
+    "label" : {
+      "IRI-based" : "hasAverageWordsPerSentence"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "283"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasPostType",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "hasPostType"
+    },
+    "superproperty" : [ "109" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "range" : "24",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "8",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "range" : "17",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "17",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "17",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isThirdPersonPronoun",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isThirdPersonPronoun"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "289"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "17",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFeatures",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasFeatures"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "292"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#postedAt",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "294",
+    "label" : {
+      "IRI-based" : "postedAt"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "293"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#isVerb",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "isVerb"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "295"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasRatioOfUniqueWordsToTotalWords",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "259",
+    "label" : {
+      "IRI-based" : "hasRatioOfUniqueWordsToTotalWords"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype" ],
+    "id" : "296"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasFriends",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "242",
+    "label" : {
+      "IRI-based" : "hasFriends"
+    },
+    "domain" : "245",
+    "attributes" : [ "datatype" ],
+    "id" : "297"
+  } ]
+}
